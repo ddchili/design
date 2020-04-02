@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.9.8",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.4.0",
     "tailwindcss": "^1.2.0"
   },
   "scripts": {
-    "build:style":"tailwind build src/styles/app.css -o src/styles/tailwind.css",
+    "build:style": "tailwind build src/styles/app.css -o src/styles/tailwind.css",
     "start": "npm run build:style && react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

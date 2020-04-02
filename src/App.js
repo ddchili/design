@@ -1,6 +1,11 @@
 import React from 'react';
+import Button from '@material-ui/core/Button';
 import './App.css';
 import './styles/app.css'
+
+const NewBtn = {
+  
+}
 
 function App() {
   return (
@@ -23,6 +28,9 @@ function App() {
               amet justo. Sed id rutrum arcu. Quisque aliquet suscipit magna a convallis.
             </p>
           </div>
+          <Button variant="contained" color="primary">
+            Hello World
+          </Button>
         </div>
       </section>
     
