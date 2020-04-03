@@ -7,6 +7,9 @@ import Button from '@material-ui/core/Button'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 
+
+import { Link } from 'react-router-dom'
+
 import Brand from '../Brand'
 
 const useStyles = makeStyles((theme) => ({
@@ -44,9 +47,18 @@ export default function Nav(props){
           DEMMER DESIGN
         </Typography> */}
         <div className={classes.nav}>
-          <Button color='inherit'>Work</Button>
-          <Button color='inherit'>Play</Button>
-          <Button color='inherit'>Contact</Button>
+        <Link to='/'>
+            <Button color='inherit'>Home</Button>
+          </Link>
+          <Link to='/work'>
+            <Button color='inherit'>Work</Button>
+          </Link>
+          <Link to='/play'>
+            <Button color='inherit'>Play</Button>
+          </Link>
+          <Link to='/contact'>
+            <Button color='inherit'>Contact</Button>
+          </Link>
         </div>
       </Toolbar>
     </AppBar>
