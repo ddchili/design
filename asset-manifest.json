@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/design/static/css/main.071655ec.chunk.css",
-    "main.js": "/design/static/js/main.f9cdf782.chunk.js",
-    "main.js.map": "/design/static/js/main.f9cdf782.chunk.js.map",
-    "runtime-main.js": "/design/static/js/runtime-main.0d9b6d83.js",
-    "runtime-main.js.map": "/design/static/js/runtime-main.0d9b6d83.js.map",
-    "static/js/2.e4e34176.chunk.js": "/design/static/js/2.e4e34176.chunk.js",
-    "static/js/2.e4e34176.chunk.js.map": "/design/static/js/2.e4e34176.chunk.js.map",
-    "index.html": "/design/index.html",
-    "precache-manifest.0e00cea9724e01a57d8eab446374d892.js": "/design/precache-manifest.0e00cea9724e01a57d8eab446374d892.js",
-    "service-worker.js": "/design/service-worker.js",
-    "static/css/main.071655ec.chunk.css.map": "/design/static/css/main.071655ec.chunk.css.map",
-    "static/js/2.e4e34176.chunk.js.LICENSE.txt": "/design/static/js/2.e4e34176.chunk.js.LICENSE.txt",
-    "static/media/brand_demmerDesign.svg": "/design/static/media/brand_demmerDesign.c1d98179.svg",
-    "static/media/demmerFinish.png": "/design/static/media/demmerFinish.cfbf6dad.png"
+    "main.css": "/design/public/static/css/main.071655ec.chunk.css",
+    "main.js": "/design/public/static/js/main.6e8ba893.chunk.js",
+    "main.js.map": "/design/public/static/js/main.6e8ba893.chunk.js.map",
+    "runtime-main.js": "/design/public/static/js/runtime-main.dbe56ff2.js",
+    "runtime-main.js.map": "/design/public/static/js/runtime-main.dbe56ff2.js.map",
+    "static/js/2.e4e34176.chunk.js": "/design/public/static/js/2.e4e34176.chunk.js",
+    "static/js/2.e4e34176.chunk.js.map": "/design/public/static/js/2.e4e34176.chunk.js.map",
+    "index.html": "/design/public/index.html",
+    "precache-manifest.d286ce7d247cbeea947b393e31cbf685.js": "/design/public/precache-manifest.d286ce7d247cbeea947b393e31cbf685.js",
+    "service-worker.js": "/design/public/service-worker.js",
+    "static/css/main.071655ec.chunk.css.map": "/design/public/static/css/main.071655ec.chunk.css.map",
+    "static/js/2.e4e34176.chunk.js.LICENSE.txt": "/design/public/static/js/2.e4e34176.chunk.js.LICENSE.txt",
+    "static/media/brand_demmerDesign.svg": "/design/public/static/media/brand_demmerDesign.c1d98179.svg",
+    "static/media/demmerFinish.png": "/design/public/static/media/demmerFinish.cfbf6dad.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.0d9b6d83.js",
+    "static/js/runtime-main.dbe56ff2.js",
     "static/js/2.e4e34176.chunk.js",
     "static/css/main.071655ec.chunk.css",
-    "static/js/main.f9cdf782.chunk.js"
+    "static/js/main.6e8ba893.chunk.js"
   ]
 }
