@@ -21,7 +21,6 @@ function HomeIcon(props) {
 }
 
 export default function Brand(props){
-  console.log(process.env.PUBLIC_URL)
   return (
     <div>
       <img src={brand}/>

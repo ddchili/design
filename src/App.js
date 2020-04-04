@@ -28,7 +28,7 @@ function App() {
   return (
     <Router>
       <div className='App'>
-        <Nav/>
+        <Nav repoName={repoName}/>
         <div>
           {/* A <Switch> looks through its children <Route>s and
               renders the first one that matches the current URL. */}

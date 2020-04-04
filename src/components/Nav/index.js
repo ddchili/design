@@ -35,7 +35,6 @@ const useStyles = makeStyles((theme) => ({
 export default function Nav(props){
 
   const classes = useStyles();
-  const repoName = process.env.PUBLIC_URL;
   
   return(
     <AppBar position='static' className={classes.colorPrimary}>
@@ -48,16 +47,16 @@ export default function Nav(props){
           DEMMER DESIGN
         </Typography> */}
         <div className={classes.nav}>
-        <Link to={ repoName + '/' }>
+        <Link to={ props.repoName + '/' }>
             <Button color='inherit'>Home</Button>
           </Link>
-          <Link to={ repoName + '/work' }>
+          <Link to={ props.repoName + '/work' }>
             <Button color='inherit'>Work</Button>
           </Link>
-          <Link to={ repoName + '/play' }>
+          <Link to={ props.repoName + '/play' }>
             <Button color='inherit'>Play</Button>
           </Link>
-          <Link to={ repoName + '/contact' }>
+          <Link to={ props.repoName + '/contact' }>
             <Button color='inherit'>Contact</Button>
           </Link>
         </div>
