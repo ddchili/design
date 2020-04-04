@@ -24,6 +24,7 @@ const NewBtn = {
 }
 
 function App() {
+  const repoName = process.env.PUBLIC_URL;
   return (
     <Router>
       <div className='App'>
@@ -32,16 +33,16 @@ function App() {
           {/* A <Switch> looks through its children <Route>s and
               renders the first one that matches the current URL. */}
           <Switch>
-            <Route path="/work">
+            <Route path={ repoName + '/work' }>
               <Work />
             </Route>
-            <Route path="/play">
+            <Route path={ repoName + '/play' }>
               <Play />
             </Route>
-            <Route path="/contact">
+            <Route path={ repoName + '/contact' }>
               <Contact />
             </Route>
-            <Route path="/">
+            <Route path={ repoName + '/' }>
               <Home />
             </Route>
           </Switch>
