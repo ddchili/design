@@ -47,16 +47,16 @@ export default function Nav(props){
           DEMMER DESIGN
         </Typography> */}
         <div className={classes.nav}>
-        <Link to={ props.repoName + '/' }>
+        <Link to={ '/' }>
             <Button color='inherit'>Home</Button>
           </Link>
-          <Link to={ props.repoName + '/work' }>
+          <Link to={ '/work' }>
             <Button color='inherit'>Work</Button>
           </Link>
-          <Link to={ props.repoName + '/play' }>
+          <Link to={ '/play' }>
             <Button color='inherit'>Play</Button>
           </Link>
-          <Link to={ props.repoName + '/contact' }>
+          <Link to={ '/contact' }>
             <Button color='inherit'>Contact</Button>
           </Link>
         </div>

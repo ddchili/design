@@ -23,26 +23,24 @@ const NewBtn = {
   
 }
 
-function App() {
-  const repoName = process.env.PUBLIC_URL;
+function App(props) {
   return (
-    <Router>
       <div className='App'>
-        <Nav repoName={repoName}/>
+        <Nav/>
         <div>
           {/* A <Switch> looks through its children <Route>s and
               renders the first one that matches the current URL. */}
           <Switch>
-            <Route path={ repoName + '/work' }>
+            <Route path={ '/work' }>
               <Work />
             </Route>
-            <Route path={ repoName + '/play' }>
+            <Route path={ '/play' }>
               <Play />
             </Route>
-            <Route path={ repoName + '/contact' }>
+            <Route path={ '/contact' }>
               <Contact />
             </Route>
-            <Route path={ repoName + '/' }>
+            <Route path={ '/' }>
               <Home />
             </Route>
           </Switch>
@@ -51,7 +49,6 @@ function App() {
           <img className='w-1/6' src={brandIcon}/>
         </div>
       </div>
-    </Router>
   );
 }
 
