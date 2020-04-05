@@ -18,7 +18,7 @@ export default function WorkView(props){
                 This is the work view.
               </h1>
               <p className='text-gray-700'>
-                Let's talk about work.
+                Let's talk about work. Need nav here.
               </p>
             </div>
           </div>
