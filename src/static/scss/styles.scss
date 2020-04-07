@@ -1,3 +1,17 @@
+@import 'colors';
+
+body{
+  color: $black;
+}
 .demmer-red {
-  color: #C06468;
+  color: $demmer-red;
+}
+
+.background-red {
+  background: $light-red;
+}
+
+.blade{
+  height: 425px;
+  width: 100vw;
 }

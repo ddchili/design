@@ -1,0 +1,22 @@
+@import '../../static/scss/colors'; 
+
+.hero{
+  width: 100vw;
+  height: 800px;
+}
+
+.avatar{
+  border-color: $demmer-red;
+  width: 400px;
+  height: auto;
+}
+
+.athlinks{
+  h2{
+    color: $athlinks-blue;
+  }
+}
+.blade-screen{
+  width: 470px;
+  height: auto;
+}

@@ -56,7 +56,6 @@ function Home() {
   return (
     <div>
       <HomeView/>
-      <h2>Home</h2>
     </div>
   )
 }
