@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "12db8ad6409f4427b00105ee1b0a3ab5",
+    "revision": "d85258690a4eddab2c7c6703d921a7a8",
     "url": "/design/index.html"
   },
   {
-    "revision": "e4dea76c230b3f9bb5f9",
-    "url": "/design/static/css/main.0889dbfe.chunk.css"
+    "revision": "cad4a343e4e44d17b108",
+    "url": "/design/static/css/main.7543daca.chunk.css"
   },
   {
-    "revision": "ad074a0230ebe8bf5e6a",
-    "url": "/design/static/js/2.43e37b52.chunk.js"
+    "revision": "5d07f3f4e2c903c80946",
+    "url": "/design/static/js/2.2e4decd3.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/design/static/js/2.43e37b52.chunk.js.LICENSE.txt"
+    "url": "/design/static/js/2.2e4decd3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e4dea76c230b3f9bb5f9",
-    "url": "/design/static/js/main.b883ad4b.chunk.js"
+    "revision": "cad4a343e4e44d17b108",
+    "url": "/design/static/js/main.f48dd36f.chunk.js"
   },
   {
     "revision": "c816f079b869400abc0f",
     "url": "/design/static/js/runtime-main.0d9b6d83.js"
+  },
+  {
+    "revision": "ea68e37a02bbdd90b49121f17f3d8deb",
+    "url": "/design/static/media/blade_athlinks.ea68e37a.png"
   },
   {
     "revision": "363f53f6da193d94c2a77de78c072613",
