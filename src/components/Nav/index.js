@@ -1,13 +1,14 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
+import { useTheme } from '@material-ui/core/styles'
+import Hidden from '@material-ui/core/Hidden'
+import withWidth from '@material-ui/core/withWidth'
+import useMediaQuery from '@material-ui/core/useMediaQuery'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
-import IconButton from '@material-ui/core/IconButton'
-import MenuIcon from '@material-ui/icons/Menu'
-
-
 import { Link } from 'react-router-dom'
 
 import Brand from '../Brand'
@@ -32,36 +33,42 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function Nav(props){
+const Nav = (props) => {
 
-  const classes = useStyles();
-  
+  const classes = useStyles()
+  const theme = useTheme()
+  const matches = useMediaQuery(theme.breakpoints.up('sm'))
+  const { width } = props
   return(
     <AppBar position='static' className={classes.colorPrimary}>
       <Toolbar>
         <Brand/>
-        {/* <IconButton edge='start' className={classes.menuButton} color='inherit' aria-label='menu'>
-          <MenuIcon />
-        </IconButton> */}
-        {/* <Typography variant='h6' className={classes.title}>
-          DEMMER DESIGN
-        </Typography> */}
         <div className={classes.nav}>
-        <Link to={ '/' }>
-            <Button color='inherit'>Home</Button>
-          </Link>
-          <Link to={ '/work' }>
-            <Button color='inherit'>Work</Button>
-          </Link>
-          <Link to={ '/play' }>
-            <Button color='inherit'>Play</Button>
-          </Link>
-          <Link to={ '/contact' }>
-            <Button color='inherit'>Contact</Button>
-          </Link>
+          {/* <span>{`theme.breakpoints.up('sm') matches: ${matches}`}</span> */}
+          <Hidden smDown>
+            <Link to={ '/' }>
+              <Button color='inherit'>Home</Button>
+            </Link>
+          
+              <Link to={ '/work' }>
+                <Button color='inherit'>Work</Button>
+              </Link>
+            <Link to={ '/play' }>
+              <Button color='inherit'>Play</Button>
+            </Link>
+            <Link to={ '/contact' }>
+              <Button color='inherit'>Contact</Button>
+            </Link>
+          </Hidden>
         </div>
       </Toolbar>
     </AppBar>
   )
 }
+
+Nav.propTypes = {
+  width: PropTypes.oneOf(['lg', 'md', 'sm', 'xl', 'xs']).isRequired,
+}
+
+export default withWidth()(Nav)
 

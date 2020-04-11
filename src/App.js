@@ -12,6 +12,12 @@ import HomeView from './views/HomeView'
 import WorkView from './views/WorkView'
 import PlayView from './views/PlayView'
 import ContactView from './views/ContactView'
+import FabNav from './components/FabNav'
+
+import Fab from '@material-ui/core/Fab'
+import AddIcon from '@material-ui/icons/Add'
+import { makeStyles } from '@material-ui/core/styles'
+import Hidden from '@material-ui/core/Hidden'
 
 import './App.css'
 import './styles/app.css'
@@ -23,7 +29,27 @@ const NewBtn = {
   
 }
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    '& > *': {
+      margin: theme.spacing(1),
+      position: 'fixed',
+    bottom: theme.spacing(2),
+    right: theme.spacing(2),
+    },
+  },
+  fab: {
+    position: 'fixed',
+    bottom: theme.spacing(2),
+    right: theme.spacing(2),
+  },
+  extendedIcon: {
+    marginRight: theme.spacing(1),
+  },
+}))
+
 function App(props) {
+  const classes = useStyles();
   return (
       <div className='App'>
         <Nav/>
@@ -46,7 +72,10 @@ function App(props) {
           </Switch>
         </div>
         <div className='w-full m-auto flex flex-wrap mt-20 justify-center text-left'>
-          <img className='w-1/6' src={brandIcon}/>
+          <img className='w-16 mb-20' src={brandIcon}/>
+        </div>
+        <div className={classes.root}>
+          <FabNav/>
         </div>
       </div>
   );

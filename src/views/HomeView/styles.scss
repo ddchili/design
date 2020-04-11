@@ -1,5 +1,7 @@
 @import '../../static/scss/colors'; 
 
+$breakpoint-tablet: 1024px;
+
 .hero{
   width: 100vw;
   height: 800px;
@@ -7,16 +9,21 @@
 
 .avatar{
   border-color: $demmer-red;
-  width: 400px;
+}
+
+.blade{
+  height: 420px;
+}
+
+.blade-screen{
+  max-width: 100vw;
   height: auto;
 }
 
-.athlinks{
-  h2{
-    color: $athlinks-blue;
+@media (max-width: $breakpoint-tablet) {
+
+  .blade{
+    height: 100%;
   }
-}
-.blade-screen{
-  width: 470px;
-  height: auto;
+  
 }
