@@ -14,9 +14,12 @@ import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import Fab from '@material-ui/core/Fab'
 import AddIcon from '@material-ui/icons/Add'
+import ExploreIcon from '@material-ui/icons/Explore'
+import NavigationIcon from '@material-ui/icons/Navigation'
 import Hidden from '@material-ui/core/Hidden'
 import { fontFamily } from '@material-ui/system'
 import { Link } from 'react-router-dom'
+import './styles.scss'
 
 const useStyles = makeStyles({
   list: {
@@ -35,6 +38,16 @@ const useStyles = makeStyles({
         textAlign: 'center'
       }
     }
+  },
+  fab: {
+    position: 'fixed',
+  },
+  // extendedIcon: {
+  //   marginRight: theme.spacing(1),
+  // },
+  menuButton: {
+    backgroundColor: '#c06468',
+    color: '#ffffff'
   },
 })
 
@@ -115,15 +128,22 @@ export default function FabNav() {
         <React.Fragment key={anchor}>
           {/* <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button> */}
           <Hidden smUp>
-            <Fab color='primary' aria-label='navigation'>
-              <IconButton
+            <Fab 
+              classes={classes.fab}
+              color='primary'
+              aria-label='navigation'
+              onClick={toggleDrawer(anchor, true)}
+              edge='start'
+              className={classes.menuButton}
+              color='inherit'>
+              {/* <IconButton
                 onClick={toggleDrawer(anchor, true)}
                 edge='start'
                 className={classes.menuButton}
                 color='inherit'
                 aria-label='menu'>
-              </IconButton>
-              <AddIcon />
+              </IconButton> */}
+              <NavigationIcon />
             </Fab>
             <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
               {list(anchor)}

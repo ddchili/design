@@ -38,14 +38,6 @@ const useStyles = makeStyles((theme) => ({
     right: theme.spacing(2),
     },
   },
-  fab: {
-    position: 'fixed',
-    bottom: theme.spacing(2),
-    right: theme.spacing(2),
-  },
-  extendedIcon: {
-    marginRight: theme.spacing(1),
-  },
 }))
 
 function App(props) {
