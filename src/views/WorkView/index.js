@@ -13,6 +13,9 @@ import bladeVisLang from '../../static/img/raster/work_athlinks_blade_visLang.jp
 import thumbBooth from '../../static/img/raster/work_thumb_booth.jpg'
 import thumbStart from '../../static/img/raster/work_thumb_startLine.jpg'
 import thumbTimers from '../../static/img/raster/work_thumb_timers.jpg'
+import thumbSolSketch from '../../static/img/raster/work_athlinks_thumb_solSketch.jpg'
+import thumbEventDashboard from '../../static/img/raster/work_thumb_evnetDashboard.jpg'
+import thumbTestBoard from '../../static/img/raster/work_thumb_usertestBoard.jpg'
 
 import brandAthlinks from '../../static/img/svg/brand_athlinks.svg'
 
@@ -48,7 +51,7 @@ const Blade = (props)=> {
   const sectionTitle = props.sectionTitle ?? false
 
   const sectionTitleBlock = (
-    <div className='text-3xl font-semibold text-left ml-12 mt-24'>
+    <div className='text-3xl font-semibold text-left ml-8 lg:ml-12 mt-24'>
           <h3>{sectionTitle}</h3>
         </div>
   )
@@ -68,6 +71,7 @@ const Blade = (props)=> {
               <img src={img}/>
             </div>
           </div>
+          {props.children}
         </div>
       </Fade>
     )
@@ -85,6 +89,7 @@ const Blade = (props)=> {
               <p>{props.copy}</p>
             </div>
           </div>
+          {props.children}
         </div>
       </Fade>
     )
@@ -95,7 +100,7 @@ const Synopsis = (props) => {
   const title = props.title ?? '' 
   return(
     <div className='w-full md:w-2/3 lg:w-2/3 align-center text-center mx-auto px-4'>
-      <h1 className='text-4xl md:text-6xl lg:text-6xl font-semibold my-16 md:my-32 lg:my-32'>{props.title}</h1>
+      <h2 className='text-4xl md:text-6xl lg:text-6xl font-semibold my-16 md:my-32 lg:my-32'>{props.title}</h2>
       {/**Table */}
       <div className='w-full text-left mx-auto md:w-1/2 lg:w-1/2'>
         <div className='flex flex-row my-4 border-b pb-4 border-gray-400'>
@@ -155,6 +160,19 @@ const CXThumbs = (props) => {
   )
 }
 
+const DS1Thumbs = (props) => {
+  return (
+    <div className='flex flex-col md:flex-row lg:flex-row'>
+      <ThumbInfo
+          thumb={thumbSolSketch} />
+      <ThumbInfo
+          thumb={thumbEventDashboard} />
+      <ThumbInfo
+          thumb={thumbTestBoard} />
+    </div>
+  )
+}
+
 const SectionBorder = () => {
   return (
     <div className='border-b py-8 mx-8 md:mx-24 lg:mx-24 border-gray-400' />
@@ -205,9 +223,10 @@ export default function WorkView(props){
           title='Onsite - Building Empathy for the Human'
           titleColor='athlinks-blue'
           copyLeft={false}
-          copy={athlinksCopy}/>
-        <CXThumbs/>
-        <SectionBorder/>
+          copy={athlinksCopy}>
+            <CXThumbs title='Hello There This is a title'/>
+            <SectionBorder/>
+        </Blade>
         <Blade
           sectionTitle='Design Sprints 2.0'
           red={false}
@@ -229,8 +248,10 @@ export default function WorkView(props){
           title='The experts in the room'
           titleColor='athlinks-blue'
           copyLeft={true}
-          copy={athlinksCopy}/>
-        <SectionBorder/>
+          copy={athlinksCopy}>
+            <DS1Thumbs/>
+            <SectionBorder/>
+        </Blade>
         <Blade
           sectionTitle='Visual Language'
           red={false}
