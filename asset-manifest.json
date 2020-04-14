@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/design/static/css/main.da6eb7dc.chunk.css",
-    "main.js": "/design/static/js/main.894b27d7.chunk.js",
-    "main.js.map": "/design/static/js/main.894b27d7.chunk.js.map",
-    "runtime-main.js": "/design/static/js/runtime-main.83f22827.js",
-    "runtime-main.js.map": "/design/static/js/runtime-main.83f22827.js.map",
-    "static/js/2.4549419e.chunk.js": "/design/static/js/2.4549419e.chunk.js",
-    "static/js/2.4549419e.chunk.js.map": "/design/static/js/2.4549419e.chunk.js.map",
+    "main.css": "/design/static/css/main.c2feb82f.chunk.css",
+    "main.js": "/design/static/js/main.4f22c35b.chunk.js",
+    "main.js.map": "/design/static/js/main.4f22c35b.chunk.js.map",
+    "runtime-main.js": "/design/static/js/runtime-main.0d9b6d83.js",
+    "runtime-main.js.map": "/design/static/js/runtime-main.0d9b6d83.js.map",
+    "static/js/2.3a856668.chunk.js": "/design/static/js/2.3a856668.chunk.js",
+    "static/js/2.3a856668.chunk.js.map": "/design/static/js/2.3a856668.chunk.js.map",
     "index.html": "/design/index.html",
-    "precache-manifest.982a2663e1ec9ddbed22f43514a912f9.js": "/design/precache-manifest.982a2663e1ec9ddbed22f43514a912f9.js",
+    "precache-manifest.3e44ebf234c46626b91a2408a2e8ecff.js": "/design/precache-manifest.3e44ebf234c46626b91a2408a2e8ecff.js",
     "service-worker.js": "/design/service-worker.js",
-    "static/css/main.da6eb7dc.chunk.css.map": "/design/static/css/main.da6eb7dc.chunk.css.map",
-    "static/js/2.4549419e.chunk.js.LICENSE.txt": "/design/static/js/2.4549419e.chunk.js.LICENSE.txt",
+    "static/css/main.c2feb82f.chunk.css.map": "/design/static/css/main.c2feb82f.chunk.css.map",
+    "static/js/2.3a856668.chunk.js.LICENSE.txt": "/design/static/js/2.3a856668.chunk.js.LICENSE.txt",
     "static/media/blade_athlinks.jpg": "/design/static/media/blade_athlinks.7951fe4a.jpg",
     "static/media/blade_mmf.jpg": "/design/static/media/blade_mmf.b543ac25.jpg",
-    "static/media/blade_planfu.jpg": "/design/static/media/blade_planfu.6622d438.jpg",
+    "static/media/blade_planfu.jpg": "/design/static/media/blade_planfu.ca721517.jpg",
     "static/media/blade_readyTalk.jpg": "/design/static/media/blade_readyTalk.1664a680.jpg",
     "static/media/brand_athlinks.svg": "/design/static/media/brand_athlinks.ed06c9d8.svg",
     "static/media/brand_demmerDesign.svg": "/design/static/media/brand_demmerDesign.363f53f6.svg",
@@ -27,14 +27,17 @@
     "static/media/work_athlinks_blade_visLang.jpg": "/design/static/media/work_athlinks_blade_visLang.3a9960db.jpg",
     "static/media/work_athlinks_cx.jpg": "/design/static/media/work_athlinks_cx.9384cbbc.jpg",
     "static/media/styles.scss": "/design/static/media/work_athlinks_hero.048b7a00.jpg",
+    "static/media/work_athlinks_thumb_solSketch.jpg": "/design/static/media/work_athlinks_thumb_solSketch.8ece8bfc.jpg",
     "static/media/work_thumb_booth.jpg": "/design/static/media/work_thumb_booth.9f7c0d04.jpg",
+    "static/media/work_thumb_evnetDashboard.jpg": "/design/static/media/work_thumb_evnetDashboard.915108b5.jpg",
     "static/media/work_thumb_startLine.jpg": "/design/static/media/work_thumb_startLine.6c4a40a8.jpg",
-    "static/media/work_thumb_timers.jpg": "/design/static/media/work_thumb_timers.f8726dce.jpg"
+    "static/media/work_thumb_timers.jpg": "/design/static/media/work_thumb_timers.f8726dce.jpg",
+    "static/media/work_thumb_usertestBoard.jpg": "/design/static/media/work_thumb_usertestBoard.6aeafb48.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.83f22827.js",
-    "static/js/2.4549419e.chunk.js",
-    "static/css/main.da6eb7dc.chunk.css",
-    "static/js/main.894b27d7.chunk.js"
+    "static/js/runtime-main.0d9b6d83.js",
+    "static/js/2.3a856668.chunk.js",
+    "static/css/main.c2feb82f.chunk.css",
+    "static/js/main.4f22c35b.chunk.js"
   ]
 }
