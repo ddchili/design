@@ -22,7 +22,7 @@ function HomeIcon(props) {
 
 export default function Brand(props){
   return (
-    <div>
+    <div className='w-2/3 md:w-full'>
       <img src={brand}/>
     </div>
   )

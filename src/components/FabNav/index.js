@@ -82,10 +82,16 @@ export default function FabNav() {
     setState({ ...state, [anchor]: open })
   }
 
-  const HomeLink = props => <Link to={'/'} {...props} />
-  const WorkLink = props => <Link to={'/work'} {...props} />
-  const PlayLink = props => <Link to={'/play'} {...props} />
-  const ContactLink = props => <Link to={'/contact'} {...props} />
+  // const HomeLink = props => <Link to={'/'} {...props} />
+  // const WorkLink = props => <Link to={'/work'} {...props} />
+  // const PlayLink = props => <Link to={'/play'} {...props} />
+  // const ContactLink = props => <Link to={'/contact'} {...props} />
+
+  const HomeLink = React.forwardRef((props, ref) => <Link to={'/'} {...props} ref={ref} />);
+  const WorkLink = React.forwardRef((props, ref) => <Link to={'/work'} {...props} ref={ref} />);
+  const PlayLink = React.forwardRef((props, ref) => <Link to={'/play'} {...props}  ref={ref} />);
+  const ContactLink = React.forwardRef((props, ref) => <Link to={'/contact'} {...props} ref={ref} />);
+
   const links = [HomeLink, WorkLink, PlayLink, ContactLink]
 
   const list = (anchor) => (

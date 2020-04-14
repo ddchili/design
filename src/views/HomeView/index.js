@@ -1,4 +1,5 @@
 import React from 'react'
+import Fade from 'react-reveal/Fade'
 
 import Button from '@material-ui/core/Button'
 import { isMobile } from 'react-device-detect'
@@ -31,17 +32,14 @@ const Hero = (props) => {
               I'm David Demmer
             </h1>
             <p className='text-gray-700 text-lg'>
-              I’m a Human-Cenetred Designer specializing in enterprise and consumer design 
-              for the health and wellness space.
+              I create Human-Cenetred Designer experiences specializing in enterprise and consumer design 
+              for the health, wellness, and fitness space.
             </p>
             <p className='text-gray-700 text-lg'>
               Check out my resume and my recent work.
             </p>
           </div>
         </div>
-        {/* <Button variant="contained" color="primary">
-          Material-UI Btn
-        </Button> */}
       </div>
     </section>
   )
@@ -59,31 +57,35 @@ const Blade = (props)=> {
   // isMobile - force col layout text first img second
   if(isMobile ? true : copyLeft){
     return (
-      <div className={`${titleColor} blade ${red} mb-64`}>
-        <div className='flex flex-col md:flex-col lg:flex-row items-center justify-center text-left h-full'>
-          <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/4 m-2 md:m-8 lg:m-8 xl:m-8'>
-            <h2 className='text-3xl font-semibold'>{props.title}</h2>
-            <p>{props.copy}</p>
+      <div className={`${titleColor} blade ${red} mb-6 md:mb-64`}>
+        <Fade bottom>
+          <div className='flex flex-col md:flex-col lg:flex-row items-center justify-center text-left h-full py-12'>
+            <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/4 m-2 md:m-8 lg:m-8 xl:m-8'>
+              <h2 className='text-3xl font-semibold'>{props.title}</h2>
+              <p>{props.copy}</p>
+            </div>
+            <div className='shadow-lg self-center m-8 blade-screen'>
+              <img src={img}/>
+            </div>
           </div>
-          <div className='shadow-lg self-center m-8 blade-screen'>
-            <img src={img}/>
-          </div>
-        </div>
+        </Fade>
       </div>
     )
   }
   else{
     return (
-      <div className={`${titleColor} blade ${red} mb-64`}>
-        <div className='flex flex-col md:flex-col lg:flex-row items-center justify-center text-left h-full'>
-          <div className='shadow-lg self-center m-8 blade-screen'>
-            <img src={img}/>
+      <div className={`${titleColor} blade ${red} mb-6 md:mb-64`}>
+        <Fade bottom>
+          <div className='flex flex-col md:flex-col lg:flex-row items-center justify-center text-left h-full py-12'>
+            <div className='shadow-lg self-center m-8 blade-screen'>
+              <img src={img}/>
+            </div>
+            <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/4 m-2 md:m-8 lg:m-8 xl:m-8'>
+              <h2 className='text-3xl font-semibold'>{props.title}</h2>
+              <p>{props.copy}</p>
+            </div>
           </div>
-          <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/4 m-2 md:m-8 lg:m-8 xl:m-8'>
-            <h2 className='text-3xl font-semibold'>{props.title}</h2>
-            <p>{props.copy}</p>
-          </div>
-        </div>
+        </Fade>
       </div>
     )
   }

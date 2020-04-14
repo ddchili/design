@@ -29,7 +29,10 @@ const useStyles = makeStyles((theme) => ({
   },
   nav: {
     flexGrow: 3,
-    textAlign: 'right'
+    textAlign: 'right',
+    '& button' :{
+      fontFamily: 'sofia-pro',
+    }
   }
 }));
 
@@ -42,15 +45,16 @@ const Nav = (props) => {
   return(
     <AppBar position='static' className={classes.colorPrimary}>
       <Toolbar>
-        <Brand/>
+        <Link to={ '/' }>
+          <Brand/>
+        </Link>
         <div className={classes.nav}>
           {/* <span>{`theme.breakpoints.up('sm') matches: ${matches}`}</span> */}
           <Hidden smDown>
             <Link to={ '/' }>
               <Button color='inherit'>Home</Button>
             </Link>
-          
-              <Link to={ '/work' }>
+            <Link to={ '/work' }>
                 <Button color='inherit'>Work</Button>
               </Link>
             <Link to={ '/play' }>

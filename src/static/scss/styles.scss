@@ -1,4 +1,11 @@
 @import 'colors';
+a:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
 
 body{
   color: $black;
