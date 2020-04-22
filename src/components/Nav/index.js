@@ -54,14 +54,11 @@ const Nav = (props) => {
             <Link to={ '/' }>
               <Button color='inherit'>Home</Button>
             </Link>
-            <Link to={ '/work' }>
-                <Button color='inherit'>Work</Button>
+            <Link to={ '/athlinks' }>
+                <Button color='inherit'>Athlinks</Button>
               </Link>
-            <Link to={ '/play' }>
-              <Button color='inherit'>Play</Button>
-            </Link>
-            <Link to={ '/contact' }>
-              <Button color='inherit'>Contact</Button>
+            <Link to={ '/about' }>
+              <Button color='inherit'>About</Button>
             </Link>
           </Hidden>
         </div>

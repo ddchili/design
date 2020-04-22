@@ -11,6 +11,10 @@ import ListItemText from '@material-ui/core/ListItemText'
 import InboxIcon from '@material-ui/icons/MoveToInbox'
 import MailIcon from '@material-ui/icons/Mail'
 import IconButton from '@material-ui/core/IconButton'
+import Collapse from '@material-ui/core/Collapse'
+import ExpandLess from '@material-ui/icons/ExpandLess'
+import ExpandMore from '@material-ui/icons/ExpandMore'
+import StarBorder from '@material-ui/icons/StarBorder'
 import MenuIcon from '@material-ui/icons/Menu'
 import Fab from '@material-ui/core/Fab'
 import AddIcon from '@material-ui/icons/Add'
@@ -60,6 +64,9 @@ const listStyles = makeStyles({
       fontSize: 24
     }
   },
+  nested: {
+    paddingLeft: '2rem',
+  },
 })
 
 export default function FabNav() {
@@ -71,6 +78,12 @@ export default function FabNav() {
     bottom: false,
     right: false,
   })
+
+  const [open, setOpen] = React.useState(false)
+
+  const handleClick = () => {
+    setOpen(!open);
+  }
 
 
 
@@ -88,11 +101,11 @@ export default function FabNav() {
   // const ContactLink = props => <Link to={'/contact'} {...props} />
 
   const HomeLink = React.forwardRef((props, ref) => <Link to={'/'} {...props} ref={ref} />);
-  const WorkLink = React.forwardRef((props, ref) => <Link to={'/work'} {...props} ref={ref} />);
+  const AthlinksLink = React.forwardRef((props, ref) => <Link to={'/athlinks'} {...props} ref={ref} />);
   const PlayLink = React.forwardRef((props, ref) => <Link to={'/play'} {...props}  ref={ref} />);
   const ContactLink = React.forwardRef((props, ref) => <Link to={'/contact'} {...props} ref={ref} />);
 
-  const links = [HomeLink, WorkLink, PlayLink, ContactLink]
+  const links = [HomeLink, AthlinksLink, PlayLink, ContactLink]
 
   const list = (anchor) => (
 
@@ -105,17 +118,30 @@ export default function FabNav() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Home', 'Work', 'Play', 'Conatct'].map((text, index) => (
+        {['Home', 'Athlinks', 'Play', 'Conatct'].map((text, index) => (
           <ListItem
             button key={text}
             component={links[index]}
-            classes={listClasses}>
+            classes={listClasses}
+            onClick={handleClick}>
           {/* <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
             <ListItemIcon/> */}
             <ListItemText primary={text} />
+            {text==='Athlinks' ? open ? <ExpandLess /> : <ExpandMore /> : ''}
           </ListItem>
-        ))}
-      </List>
+          ))}
+            <Collapse in={open} timeout="auto" unmountOnExit>
+              <List component="div" disablePadding>
+                <ListItem button>
+                  <ListItemIcon>
+                    <StarBorder />
+                  </ListItemIcon>
+                  <ListItemText primary="Starred" />
+                </ListItem>
+              </List>
+            </Collapse> 
+  
+        </List>
       <Divider />
       {/* <List>
         {['All mail', 'Trash', 'Spam'].map((text, index) => (
@@ -133,7 +159,7 @@ export default function FabNav() {
       {['bottom'].map((anchor) => (
         <React.Fragment key={anchor}>
           {/* <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button> */}
-          <Hidden smUp>
+          {/* <Hidden smUp> */}
             <Fab 
               classes={classes.fab}
               color='primary'
@@ -154,7 +180,7 @@ export default function FabNav() {
             <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
               {list(anchor)}
             </Drawer>
-          </Hidden>
+          {/* </Hidden> */}
         </React.Fragment>
       ))}
     </div>

@@ -1,8 +1,11 @@
 import React from 'react'
 import {
   BrowserRouter as Router,
+  Link,
   Switch,
   Route,
+  useParams,
+  useRouteMatch
 } from 'react-router-dom'
 
 import Nav from './components/Nav'
@@ -10,9 +13,9 @@ import Nav from './components/Nav'
 import ScrollToTop from './utils/ScrollToTop'
 
 import HomeView from './views/HomeView'
-import WorkView from './views/WorkView'
+import AthlinksView from './views/AthlinksView'
 import PlayView from './views/PlayView'
-import ContactView from './views/ContactView'
+import AboutView from './views/AboutView'
 import FabNav from './components/FabNav'
 
 import { makeStyles } from '@material-ui/core/styles'
@@ -22,6 +25,11 @@ import './styles/app.css'
 import './static/scss/styles.scss'
 
 import brandIcon from './static/img/svg/brand_icon_demmerDesign.svg'
+import CreateEventView from './views/AthlinksView/CreateEventView'
+import Overview from './views/AthlinksView/Overview'
+import AthleteRacePage from './views/AthlinksView/AthleteRacePage'
+import ActivityFeeds from './views/AthlinksView/ActivityFeeds'
+import VirtualRaces from './views/AthlinksView/VirtualRaces'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -36,9 +44,11 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 function App(props) {
-  const classes = useStyles();
+  const classes = useStyles()
+  // let { path, url } = useRouteMatch()
   return (
     <div className='App'>
+      
       <Router>
         <ScrollToTop>
             <Nav/>
@@ -46,14 +56,17 @@ function App(props) {
               {/* A <Switch> looks through its children <Route>s and
                   renders the first one that matches the current URL. */}
               <Switch>
-                <Route path={ '/work' }>
-                  <Work />
+                <Route path={ '/athlinks' }>
+                  <Athlinks />
+                </Route>
+                <Route path={ '/athlinks/event' }>
+                  <CreateEvent />
                 </Route>
                 <Route path={ '/play' }>
                   <Play />
                 </Route>
-                <Route path={ '/contact' }>
-                  <Contact />
+                <Route path={ '/about' }>
+                  <About />
                 </Route>
                 <Route path={ '/' }>
                   <Home />
@@ -80,10 +93,47 @@ function Home() {
   )
 }
 
-function Work() {
+function Athlinks() {
+  // let match = useRouteMatch()
+  const { path, url } = useRouteMatch();
+  // const createEventLink = (<div><Link to={`${path}/event`}><h1>Create Event</h1></Link></div>)
+  // const overviewLink = (<div><Link to={`${path}/overview`}><h1>Overview</h1></Link></div>)
+  // console.log(`${path}`)
   return (
     <div>
-      <WorkView/>
+      <AthlinksView/>
+      {/* {match.path === '/athlinks' ? <Overview/> : ''} */}
+      <Switch>
+        <Route exact path='/athlinks' component={Overview}/>
+        <Route path={`/overview`}>
+          <Overview/>
+        </Route>
+        <Route path={`${path}/event`}>
+          <CreateEventView/>
+        </Route>
+        <Route path={`/athlinks/arp`}>
+          <AthleteRacePage/>
+        </Route>
+        <Route path={`/athlinks/feeds`}>
+          <ActivityFeeds/>
+        </Route>
+        <Route path={`/athlinks/vr`}>
+          <VirtualRaces/>
+        </Route>
+        {/* <Route path={match.path}>
+          <h3>Select a case study</h3>
+          {overviewLink}
+          {createEventLink}
+        </Route> */}
+      </Switch>
+    </div>
+  ) 
+}
+
+function CreateEvent() {
+  return (
+    <div>
+      <CreateEventView/>
     </div>
   ) 
 }
@@ -97,11 +147,11 @@ function Play() {
   )
 }
 
-function Contact() {
+function About() {
   return (
     <div>
-      <ContactView/>
-      <h2>Contact</h2>
+      <AboutView/>
+      <h2>About</h2>
     </div>
   )
 }

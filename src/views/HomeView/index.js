@@ -1,4 +1,13 @@
 import React from 'react'
+import {
+  BrowserRouter as Router,
+  Link,
+  Switch,
+  Route,
+  useParams,
+  useRouteMatch
+} from 'react-router-dom'
+
 import Fade from 'react-reveal/Fade'
 
 import Button from '@material-ui/core/Button'
@@ -53,6 +62,10 @@ const Blade = (props)=> {
   const title = props.title ? props.title : 'no title'
   const titleColor = props.titleColor ? props.titleColor : 'black'
   const copy = props.copy ? props.copy : 'no copy supplied'
+  const route = props.route ?? '/'
+  const view = props.view ?? ''
+
+  const { path, url } = useRouteMatch()
 
   // isMobile - force col layout text first img second
   if(isMobile ? true : copyLeft){
@@ -61,8 +74,11 @@ const Blade = (props)=> {
         <Fade bottom>
           <div className='flex flex-col md:flex-col lg:flex-row items-center justify-center text-left h-full py-12'>
             <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/4 m-2 md:m-8 lg:m-8 xl:m-8'>
-              <h2 className='text-3xl font-semibold'>{props.title}</h2>
+              <h2 className='text-3xl font-semibold'><Link to={`/${view}`}>{props.title}</Link></h2>
               <p>{props.copy}</p>
+              <button className='bg-gray-800 hover:bg-gray-700 text-white font-bold w-2/3 py-2 px-4 my-8 rounded-full uppercase'>
+                <Link to={`/${view}`}>View Athlinks Projects</Link>
+              </button>
             </div>
             <div className='shadow-lg self-center m-8 blade-screen'>
               <img src={img}/>
@@ -81,7 +97,7 @@ const Blade = (props)=> {
               <img src={img}/>
             </div>
             <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/4 m-2 md:m-8 lg:m-8 xl:m-8'>
-              <h2 className='text-3xl font-semibold'>{props.title}</h2>
+              <h2 className='text-3xl font-semibold'><Link to={`/${view}`}>{props.title}</Link></h2>
               <p>{props.copy}</p>
             </div>
           </div>
@@ -127,8 +143,10 @@ export default function HomeView(props){
         img={screenAthlinks}
         title='Athlinks'
         titleColor='athlinks-blue'
+        route='/athlinks'
         copyLeft={true}
-        copy={athlinksCopy}/>
+        copy={athlinksCopy}
+        view='athlinks'/>
       <Blade
         red={false}
         img={screenPlanfu}
