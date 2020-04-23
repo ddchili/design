@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/design/static/css/main.786ca45d.chunk.css",
-    "main.js": "/design/static/js/main.64d06136.chunk.js",
-    "main.js.map": "/design/static/js/main.64d06136.chunk.js.map",
+    "main.js": "/design/static/js/main.2f872a7d.chunk.js",
+    "main.js.map": "/design/static/js/main.2f872a7d.chunk.js.map",
     "runtime-main.js": "/design/static/js/runtime-main.0d9b6d83.js",
     "runtime-main.js.map": "/design/static/js/runtime-main.0d9b6d83.js.map",
-    "static/js/2.baccd055.chunk.js": "/design/static/js/2.baccd055.chunk.js",
-    "static/js/2.baccd055.chunk.js.map": "/design/static/js/2.baccd055.chunk.js.map",
+    "static/js/2.3ccf819d.chunk.js": "/design/static/js/2.3ccf819d.chunk.js",
+    "static/js/2.3ccf819d.chunk.js.map": "/design/static/js/2.3ccf819d.chunk.js.map",
     "index.html": "/design/index.html",
-    "precache-manifest.cdfab97e98408ef8de5369733eb72d25.js": "/design/precache-manifest.cdfab97e98408ef8de5369733eb72d25.js",
+    "precache-manifest.3c603ad7f03cc565c08b831a0767ca37.js": "/design/precache-manifest.3c603ad7f03cc565c08b831a0767ca37.js",
     "service-worker.js": "/design/service-worker.js",
     "static/css/main.786ca45d.chunk.css.map": "/design/static/css/main.786ca45d.chunk.css.map",
-    "static/js/2.baccd055.chunk.js.LICENSE.txt": "/design/static/js/2.baccd055.chunk.js.LICENSE.txt",
+    "static/js/2.3ccf819d.chunk.js.LICENSE.txt": "/design/static/js/2.3ccf819d.chunk.js.LICENSE.txt",
     "static/media/arp_blade_post.jpg": "/design/static/media/arp_blade_post.d5197f12.jpg",
     "static/media/arp_blade_pre.jpg": "/design/static/media/arp_blade_pre.3314479f.jpg",
     "static/media/arp_blade_states.jpg": "/design/static/media/arp_blade_states.31fdf3dc.jpg",
@@ -26,6 +26,15 @@
     "static/media/brand_demmerDesign.svg": "/design/static/media/brand_demmerDesign.363f53f6.svg",
     "static/media/brand_icon_demmerDesign.svg": "/design/static/media/brand_icon_demmerDesign.d2fda048.svg",
     "static/media/demmerFinish.png": "/design/static/media/demmerFinish.cfbf6dad.png",
+    "static/media/feed_arp_post.jpg": "/design/static/media/feed_arp_post.c1fe80a0.jpg",
+    "static/media/feed_arp_pre.jpg": "/design/static/media/feed_arp_pre.b5e84452.jpg",
+    "static/media/feeds_arp_pre.jpg": "/design/static/media/feeds_arp_pre.0a364d9b.jpg",
+    "static/media/feeds_thumb_leadville_mosquitoTime.jpg": "/design/static/media/feeds_thumb_leadville_mosquitoTime.5227f768.jpg",
+    "static/media/feeds_thumb_miamiInterview1.jpg": "/design/static/media/feeds_thumb_miamiInterview1.6929e5b0.jpg",
+    "static/media/feeds_thumb_miamiInterview2.jpg": "/design/static/media/feeds_thumb_miamiInterview2.576692b4.jpg",
+    "static/media/feeds_thumb_miamiInterview3.jpg": "/design/static/media/feeds_thumb_miamiInterview3.9701fc07.jpg",
+    "static/media/feeds_thumb_miamiInterview4.jpg": "/design/static/media/feeds_thumb_miamiInterview4.8926ecce.jpg",
+    "static/media/feeds_thumb_miami_start.jpg": "/design/static/media/feeds_thumb_miami_start.109d983d.jpg",
     "static/media/miamiMarathon_2018_uxReel_compressed.mp4": "/design/static/media/miamiMarathon_2018_uxReel_compressed.4ff093a3.mp4",
     "static/media/overview_athlinks_ARP.jpg": "/design/static/media/overview_athlinks_ARP.ec259608.jpg",
     "static/media/overview_athlinks_VR.jpg": "/design/static/media/overview_athlinks_VR.cf3905d4.jpg",
@@ -52,8 +61,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0d9b6d83.js",
-    "static/js/2.baccd055.chunk.js",
+    "static/js/2.3ccf819d.chunk.js",
     "static/css/main.786ca45d.chunk.css",
-    "static/js/main.64d06136.chunk.js"
+    "static/js/main.2f872a7d.chunk.js"
   ]
 }
