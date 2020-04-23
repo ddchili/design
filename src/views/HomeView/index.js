@@ -41,11 +41,11 @@ const Hero = (props) => {
               I'm David Demmer
             </h1>
             <p className='text-gray-700 text-lg'>
-              I create Human-Cenetred Designer experiences specializing in enterprise and consumer design 
+              I create People-Cenetred Design experiences specializing in enterprise and consumer design 
               for the health, wellness, and fitness space.
             </p>
             <p className='text-gray-700 text-lg'>
-              Check out my resume and my recent work.
+              My portfolio is currently being updated for 2020 but feel free to browse as I'm updating it daily. 
             </p>
           </div>
         </div>

@@ -21,7 +21,7 @@ import overviewVirRace from '../../../static/img/raster/overview_athlinks_VR.jpg
 import brandAthlinks from '../../../static/img/svg/brand_athlinks.svg'
 import './styles.scss'
 
-const Blade = (props)=> {
+const OverviewBlade = (props)=> {
   const img = props.img ? props.img : 'no img src'
   const title = props.title ? props.title : 'no title'
   const titleColor = props.titleColor ? props.titleColor : 'black'
@@ -51,7 +51,7 @@ const Blade = (props)=> {
             <h2 className='text-4xl font-semibold'>{title}</h2>
             <p>{copy}</p>
             {/* <Link to={`${url}/event`}> */}
-              <button className="bg-gray-800 hover:bg-gray-700 text-white font-bold w-2/3 py-2 px-4 my-8 rounded-full uppercase"
+              <button className='bg-gray-800 hover:bg-gray-700 text-white font-bold w-2/3 py-2 px-4 my-8 rounded-full uppercase'
                 onClick={handleOnClick}>
                 <Link to={`${url}/${view}`}>View Case Study</Link>
               </button>
@@ -129,28 +129,28 @@ function Overview(props){
           target='Athletic Endurance Events'
           copy={background}/>
       <div className='container mx-auto'>
-        <Blade
+        <OverviewBlade
           img={overviewCreateEvent}
           title='Create Event'
           titleColor='athlinks-blue'
           copyLeft={false}
           copy={createEventCopy}
           view='event'/>
-        <Blade
+        <OverviewBlade
           img={overviewARP}
           title='Athlete Race Pages'
           titleColor='athlinks-blue'
           copyLeft={false}
           copy={ARPCopy}
           view='arp'/>
-        <Blade
+        <OverviewBlade
           img={overviewFeeds}
           title='Activity Feeds'
           titleColor='athlinks-blue'
           copyLeft={false}
           copy={feedsCopy}
           view='feeds'/>
-        <Blade
+        <OverviewBlade
           img={overviewVirRace}
           title='Virtual Races'
           titleColor='athlinks-blue'

@@ -71,6 +71,7 @@ function App(props) {
                 <Route path={ '/' }>
                   <Home />
                 </Route>
+                <Route component={Home}/>
               </Switch>
             </div>
             <div className='w-full m-auto flex flex-wrap mt-20 justify-center text-left'>
