@@ -70,12 +70,12 @@ const Blade = (props)=> {
   // isMobile - force col layout text first img second
   if(isMobile ? true : copyLeft){
     return (
-      <div className={`${titleColor} blade ${red} mb-6 md:mb-64`}>
+      <div className={`${titleColor} blade ${red} mb-6 md:mb-64 text-lg`}>
         <Fade bottom>
           <div className='flex flex-col md:flex-col lg:flex-row items-center justify-center text-left h-full py-12'>
             <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/4 m-2 md:m-8 lg:m-8 xl:m-8'>
-              <h2 className='text-3xl font-semibold'><Link to={`/${view}`}>{props.title}</Link></h2>
-              <p>{props.copy}</p>
+              <h2 className='text-3xl font-semibold'><Link to={`/${view}`}>{title}</Link></h2>
+              <p>{copy}</p>
               <button className='bg-gray-800 hover:bg-gray-700 text-white font-bold w-2/3 py-2 px-4 my-8 rounded-full uppercase'>
                 <Link to={`/${view}`}>View Athlinks Projects</Link>
               </button>
@@ -90,15 +90,15 @@ const Blade = (props)=> {
   }
   else{
     return (
-      <div className={`${titleColor} blade ${red} mb-6 md:mb-64`}>
+      <div className={`${titleColor} blade ${red} mb-6 md:mb-64 text-lg`}>
         <Fade bottom>
           <div className='flex flex-col md:flex-col lg:flex-row items-center justify-center text-left h-full py-12'>
             <div className='shadow-lg self-center m-8 blade-screen'>
               <img src={img}/>
             </div>
             <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/4 m-2 md:m-8 lg:m-8 xl:m-8'>
-              <h2 className='text-3xl font-semibold'><Link to={`/${view}`}>{props.title}</Link></h2>
-              <p>{props.copy}</p>
+              <h2 className='text-3xl font-semibold'><Link to={`/${view}`}>{title}</Link></h2>
+              <p>{copy}</p>
             </div>
           </div>
         </Fade>
@@ -110,30 +110,30 @@ const Blade = (props)=> {
 
 export default function HomeView(props){
 
-  const athlinksCopy = `In at libero varius, rutrum leo eu, eleifend purus. Etiam 
-  vulputate fringilla neque sit amet gravida. Vestibulum id turpis vestibulum felis 
-  suscipit faucibus. Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit 
-  varius ac ut risus. Aliquam erat volutpat. Vivamus elementum vestibulum ligula.`
+  const athlinksCopy = `Designing products for the endurance athletic markets has been 
+  a memorable experience for me. Whether we were in the midst of a Design Sprint or 
+  having conversations with athletes on race day, the domain is incredibly inspiring 
+  to be a part of.`
 
-  const planfuCopy = `In at libero varius, rutrum leo eu, eleifend purus. Etiam 
-  vulputate fringilla neque sit amet gravida. Vestibulum id turpis vestibulum felis 
-  suscipit faucibus. Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit 
-  varius ac ut risus. Aliquam erat volutpat. Vivamus elementum vestibulum ligula.`
+  const planfuCopy = `Helping physical therapist practitioners conduct their craft by 
+  eliminating overhead in their client scheduling flows. As a founder, designer, marketer, 
+  product manager and front-end engineer, Planfu allows me to work with a small team of 
+  close friends as a side project to keep our chops up on the technical side of product 
+  development.`
 
-  const readyTalkCopy = `In at libero varius, rutrum leo eu, eleifend purus. Etiam 
-  vulputate fringilla neque sit amet gravida. Vestibulum id turpis vestibulum felis 
-  suscipit faucibus. Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit 
-  varius ac ut risus. Aliquam erat volutpat. Vivamus elementum vestibulum ligula.`
+  const readyTalkCopy = `Enterprise communications for all sorts of business, ReadyTalk 
+  was the standard for quality. We focused on experiences for small collaborative customers 
+  to large-scale webinars for conducting business using remote conferencing solutions.`
 
-  const mmfCopy = `In at libero varius, rutrum leo eu, eleifend purus. Etiam 
-  vulputate fringilla neque sit amet gravida. Vestibulum id turpis vestibulum felis 
-  suscipit faucibus. Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit 
-  varius ac ut risus. Aliquam erat volutpat. Vivamus elementum vestibulum ligula.`
+  const mmfCopy = `The same team that developed Planfu, we also designed mapping technology 
+  for snow sports enthusiasts which was acquired by MapMyFitness. Along with the acquisition, 
+  I was assigned to the helm of their user experience design team of the efforts across all 
+  the MapMyFitness brand family.`
 
-  const rallyCopy = `In at libero varius, rutrum leo eu, eleifend purus. Etiam 
-  vulputate fringilla neque sit amet gravida. Vestibulum id turpis vestibulum felis 
-  suscipit faucibus. Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit 
-  varius ac ut risus. Aliquam erat volutpat. Vivamus elementum vestibulum ligula.`
+  const rallyCopy = `As one of the first hires for Rally, I was brought on as an automation 
+  engineer and transitioned into the role of an Interaction Designer where I was responsible 
+  for working with the original design contractor and evolving the experience for their agile 
+  project management SaaS platform. `
 
   return (
     <div>
