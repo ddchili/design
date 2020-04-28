@@ -8,6 +8,7 @@ import { isMobile } from 'react-device-detect'
 
 export default function ThumbInfo(props) {
   const thumb = props.thumb ?? 'no img'
+  const caption = props.caption ?? ''
   return (
     <div className='w-full md:w-1/3 lg:w-1/3 mt-24'>
       <div className='flex flex-col items-center px-12 text-left'>
@@ -15,9 +16,7 @@ export default function ThumbInfo(props) {
           <img src={thumb}/>
         </div>
         <div>
-          <p className='text-sm mt-2'>In at libero varius, rutrum leo eu, eleifend purus. Etiam 
-            vulputate fringilla neque sit amet gravida. Vestibulum id turpis vestibulum felis 
-            suscipit faucibus. Donec et sollicitudin velit.</p>
+          <p className='text-sm mt-2'>{caption}</p>
         </div>
       </div>
     </div>

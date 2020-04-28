@@ -31,7 +31,7 @@ export default function Blade(props) {
           <div className='flex flex-col md:flex-col lg:flex-row justify-center text-left h-full'>
             <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/2 m-8'>
               <h2 className='text-1xl font-semibold tracking-widest uppercase'>{props.title}</h2>
-              <p>{props.copy}</p>
+              <div>{props.copy}</div>
             </div>
             <div className='shadow-lg self-center m-8'>
               <img src={img}/>
@@ -52,7 +52,7 @@ export default function Blade(props) {
             </div>
             <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/2 m-8'>
               <h2 className='text-1xl font-semibold tracking-widest uppercase'>{props.title}</h2>
-              <p>{props.copy}</p>
+              <div>{props.copy}</div>
             </div>
           </div>
           {props.children}
@@ -75,7 +75,7 @@ export function BladeLarge(props){
         <div className='text-left m-12'>
 
             <h2 className='text-1xl font-semibold tracking-widest uppercase'>{title}</h2>
-            <p>{copy}</p>
+            <div>{copy}</div>
           </div>
           <div className='shadow-lg self-center m-4'>
             <img src={img}/>
@@ -100,7 +100,7 @@ export function BladeColumn(props){
         <div className='flex flex-col text-left h-full'>
           <div className='flex flex-col m-8'>
             <h2 className='text-1xl font-semibold tracking-widest uppercase'>{title}</h2>
-            <p>{copy}</p>
+            <div>{copy}</div>
           </div>
           <div className='shadow-lg self-center m-2'>
             <img src={img}/>

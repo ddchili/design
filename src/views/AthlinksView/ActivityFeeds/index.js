@@ -1,7 +1,6 @@
 import React from 'react'
 
-import Blade, { BladeColumn } from '../../../components/Blade'
-import {BladeLarge} from '../../../components/Blade'
+import Blade, { BladeColumn, BladeLarge } from '../../../components/Blade'
 import Synopsis from '../../../components/Synopsis'
 import ThumbInfo from '../../../components/ThumbInfo'
 

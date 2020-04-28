@@ -94,21 +94,18 @@ function Overview(props){
   and results aspect of endurance events and its customers range from New York Road Runners 
   for the New York Marathon to Spartan obstacle race events around the world.`
 
-  const createEventCopy = `Integer ornare ornare aliquet. Nunc eu tellus ultrices, efficitur 
-  eros nec, porttitor erat. In id ante nunc. Aenean feugiat fermentum libero, vitae faucibus 
-  urna vulputate ac.`
+  const createEventCopy = `Connecting the source of the event from its inception all the way 
+  to race day final results, a commitment to the athlete.`
 
-  const ARPCopy = `Integer ornare ornare aliquet. Nunc eu tellus ultrices, efficitur 
-  eros nec, porttitor erat. In id ante nunc. Aenean feugiat fermentum libero, vitae faucibus 
-  urna vulputate ac.`
+  const ARPCopy = `“How do I share my race details with my friends so they can track me?” 
+  That was one the biggest problems with athletes where they wanted to share all their race 
+  details with friends and family before the event. `
 
-  const feedsCopy = `Integer ornare ornare aliquet. Nunc eu tellus ultrices, efficitur 
-  eros nec, porttitor erat. In id ante nunc. Aenean feugiat fermentum libero, vitae faucibus 
-  urna vulputate ac.`
+  const feedsCopy = `Activity feeds enabled social engagement with the main point in answering 
+  the question, “What races are my friends doing?”`
 
-  const vrCopy = `Integer ornare ornare aliquet. Nunc eu tellus ultrices, efficitur 
-  eros nec, porttitor erat. In id ante nunc. Aenean feugiat fermentum libero, vitae faucibus 
-  urna vulputate ac.`
+  const vrCopy = `WIth the advent of COVID-19, we’ve witnessed a shutdown of many aspects of 
+  everyday our lives, including endurance athletic events. Virtual Races are here to stay. `
 
   // const  match = useRouteMatch()
   let { path, url } = useRouteMatch()
