@@ -123,7 +123,6 @@ const BladeColumns = () => {
   return (
     <div className='flex flex-col lg:flex-row'>
       <BladeColumn
-        sectionTitle='Athlete Race Pages'
         red={false}
         img={orgCrusher}
         title='Design Evolution'
@@ -132,7 +131,6 @@ const BladeColumns = () => {
         copy={athlinksCopy}>
       </BladeColumn>
       <BladeColumn
-        sectionTitle='Athlete Race Pages'
         red={false}
         img={dashboard}
         title='Design Evolution'
@@ -159,6 +157,17 @@ export default function CreateEventView(props){
   vulputate fringilla neque sit amet gravida. Vestibulum id turpis vestibulum felis 
   suscipit faucibus. Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit 
   varius ac ut risus. Aliquam erat volutpat. Vivamus elementum vestibulum ligula.`
+
+  const partnerSyncCopy = `The evolution of Athlinks Hub became PartnerSync, a directory access 
+  application for external registration providers and scoring/timing platforms to integrate 
+  their data sources by a series of connections, connecting their races to roster data.`
+
+  const orgCrusherCopy = `Most recent activities made by race director and timer individuals, 
+  updating each other for up to date event statuses.`
+
+  const dashboardCopy = `As athletes register for their races, race directors want to know more 
+  about their financials impacts and overall health of the race. Timers want to know the number 
+  of athletes for each timing bracket. `
 
   const challenge = `Timers use our Chronotrack hardware to time athletic events, but 
   they may also use different scoring platforms to push results to. How do we ensure 
@@ -339,21 +348,37 @@ export default function CreateEventView(props){
           sectionTitle='Visual Language'
           red={false}
           img={bladeVisLang}
-          title='The experts in the room'
+          title='The experts in the roomd'
           titleColor='athlinks-blue'
           copyLeft={true}
           copy={athlinksCopy}/>
 
         <SectionBorder/>
-        <BladeColumns/>
+        
         <BladeLarge
-          sectionTitle='Visual Language'
+          sectionTitle='PartnerSync Directory Integration'
           red={false}
           img={partnerSync}
-          title='The experts in the room'
+          title='PartnerSync Directory Integration'
           titleColor='athlinks-blue'
           copyLeft={true}
-          copy={athlinksCopy}/>
+          copy={partnerSyncCopy}/>
+
+        <BladeLarge
+          red={false}
+          img={orgCrusher}
+          title='Organizational Dasboard'
+          titleColor='athlinks-blue'
+          copyLeft={true}
+          copy={orgCrusherCopy}/>
+
+        <BladeLarge
+          red={false}
+          img={dashboard}
+          title='Event Dashboard'
+          titleColor='athlinks-blue'
+          copyLeft={true}
+          copy={dashboardCopy}/>
       </div>
     </div>
   )

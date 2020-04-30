@@ -34,7 +34,7 @@ export default function Blade(props) {
               <div>{props.copy}</div>
             </div>
             <div className='shadow-lg self-center m-8'>
-              <img src={img}/>
+              <img className='rounded-md' src={img}/>
             </div>
           </div>
           {props.children}
@@ -48,7 +48,7 @@ export default function Blade(props) {
         <div className={`${titleColor} mb-8`}>
           <div className='flex flex-col md:flex-col lg:flex-row justify-center text-left h-full'>
             <div className='shadow-lg self-center m-8'>
-              <img src={img}/>
+              <img className='rounded-md' src={img}/>
             </div>
             <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/2 m-8'>
               <h2 className='text-1xl font-semibold tracking-widest uppercase'>{props.title}</h2>
@@ -68,17 +68,24 @@ export function BladeLarge(props){
   const title = props.title ? props.title : 'no title'
   const titleColor = props.titleColor ? props.titleColor : 'black'
   const copy = props.copy ? props.copy : 'no copy supplied'
+  const sectionTitle = props.sectionTitle ?? false
+
+  const sectionTitleBlock = (
+    <div className='text-3xl font-semibold text-left ml-8 lg:ml-12 mt-24'>
+          <h3>{sectionTitle}</h3>
+        </div>
+  )
 
   return(
     <Fade bottom duration={500}>
       <div className={`${titleColor} flex flex-col h-full mb-8 w-full`}>
+        {sectionTitle ? sectionTitleBlock : null}
         <div className='text-left m-12'>
-
             <h2 className='text-1xl font-semibold tracking-widest uppercase'>{title}</h2>
             <div>{copy}</div>
           </div>
           <div className='shadow-lg self-center m-4'>
-            <img src={img}/>
+            <img className='rounded-md' src={img}/>
           </div>
 
         {props.children}
@@ -103,7 +110,7 @@ export function BladeColumn(props){
             <div>{copy}</div>
           </div>
           <div className='shadow-lg self-center m-2'>
-            <img src={img}/>
+            <img className='rounded-md'src={img}/>
           </div>
         </div>
         {props.children}
