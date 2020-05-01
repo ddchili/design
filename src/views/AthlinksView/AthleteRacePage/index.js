@@ -38,26 +38,6 @@ import brandAthlinks from '../../../static/img/svg/brand_athlinks.svg'
 
 import './styles.scss'
 
-
-const Hero = (props) => {
-  return (
-    <section className='bg-cover bg-center work-hero w-full text-left athlinks-blue'>
-      <div className='md:w-3/6 lg:w-3/6 m-auto flex flex-wrap'>
-        <div className='flex flex-col items-center md:flex-col lg:flex-row w-full mb-8 p-10'>
-          <div className='w-full lg:w-2/3 m-2 lg:ml-12'>
-            <div className='mb-4'>
-              <img src={brandAthlinks}/>
-            </div>
-            <p className='text-white text-lg'>
-              {props.copy}
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
-
 const ARPRaceDayThumbs = (props) => {
   return (
     <div className='flex flex-col md:flex-row lg:flex-row'>

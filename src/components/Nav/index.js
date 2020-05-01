@@ -56,7 +56,10 @@ const Nav = (props) => {
             </Link>
             <Link to={ '/athlinks' }>
                 <Button color='inherit'>Athlinks</Button>
-              </Link>
+            </Link>
+            <Link to={ '/planfu' }>
+                <Button color='inherit'>Planfu</Button>
+            </Link>
             <Link to={ '/about' }>
               <Button color='inherit'>About</Button>
             </Link>

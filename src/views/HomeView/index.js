@@ -76,8 +76,9 @@ const Blade = (props)=> {
             <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/4 m-2 md:m-8 lg:m-8 xl:m-8'>
               <h2 className='text-3xl font-semibold'><Link to={`/${view}`}>{title}</Link></h2>
               <p>{copy}</p>
-              <button className='bg-gray-800 hover:bg-gray-700 text-white font-bold w-2/3 py-2 px-4 my-8 rounded-full uppercase'>
-                <Link to={`/${view}`}>View Athlinks Projects</Link>
+              <button className='text-base tracking-wide bg-gray-800 hover:bg-gray-700 text-white font-bold w-4/5
+              py-2 px-4 my-8 rounded-full uppercase'>
+                <Link to={`/${view}`}>View Projects</Link>
               </button>
             </div>
             <div className='shadow-lg self-center m-8 blade-screen'>
@@ -99,6 +100,10 @@ const Blade = (props)=> {
             <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/4 m-2 md:m-8 lg:m-8 xl:m-8'>
               <h2 className='text-3xl font-semibold'><Link to={`/${view}`}>{title}</Link></h2>
               <p>{copy}</p>
+              <button className='text-base tracking-wide bg-gray-800 hover:bg-gray-700 text-white font-bold w-4/5
+              py-2 px-4 my-8 rounded-full uppercase'>
+                <Link to={`/${view}`}>View Projects</Link>
+              </button>
             </div>
           </div>
         </Fade>
@@ -152,6 +157,8 @@ export default function HomeView(props){
         img={screenPlanfu}
         title='Planfu'
         titleColor='planfu-orange'
+        route='/planfu'
+        view='planfu'
         copyLeft={false}
         copy={athlinksCopy}/>
       <Blade

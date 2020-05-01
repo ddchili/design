@@ -26,10 +26,14 @@ import './static/scss/styles.scss'
 
 import brandIcon from './static/img/svg/brand_icon_demmerDesign.svg'
 import CreateEventView from './views/AthlinksView/CreateEventView'
-import Overview from './views/AthlinksView/Overview'
+import AthlinksOverview from './views/AthlinksView/Overview'
 import AthleteRacePage from './views/AthlinksView/AthleteRacePage'
 import ActivityFeeds from './views/AthlinksView/ActivityFeeds'
 import VirtualRaces from './views/AthlinksView/VirtualRaces'
+
+import PlanfuOverview from './views/PlanfuView/Overview'
+
+import PlanfuView from './views/PlanfuView'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -58,6 +62,9 @@ function App(props) {
               <Switch>
                 <Route path={ '/athlinks' }>
                   <Athlinks />
+                </Route>
+                <Route path={ '/planfu' }>
+                  <Planfu />
                 </Route>
                 <Route path={ '/athlinks/event' }>
                   <CreateEvent />
@@ -105,9 +112,9 @@ function Athlinks() {
       <AthlinksView/>
       {/* {match.path === '/athlinks' ? <Overview/> : ''} */}
       <Switch>
-        <Route exact path='/athlinks' component={Overview}/>
+        <Route exact path='/athlinks' component={AthlinksOverview}/>
         <Route path={`/overview`}>
-          <Overview/>
+          <AthlinksOverview/>
         </Route>
         <Route path={`${path}/event`}>
           <CreateEventView/>
@@ -130,6 +137,41 @@ function Athlinks() {
     </div>
   ) 
 }
+
+function Planfu() {
+  const { path, url } = useRouteMatch();
+  return (
+    <div>
+      <PlanfuView/>
+      <Switch>
+        <Route exact path='/planfu' component={PlanfuOverview}/>
+        <Route path={`/overview`}>
+          <PlanfuOverview/>
+        </Route>
+        {/* <Route path={`${path}/event`}>
+          <CreateEventView/>
+        </Route>
+        <Route path={`/athlinks/arp`}>
+          <AthleteRacePage/>
+        </Route>
+        <Route path={`/athlinks/feeds`}>
+          <ActivityFeeds/>
+        </Route>
+        <Route path={`/athlinks/vr`}>
+          <VirtualRaces/>
+        </Route> */}
+      </Switch>
+    </div>
+  ) 
+}
+
+// function Planfu() {
+//   return (
+//     <div>
+//       <PlanfuView/>
+//     </div>
+//   )
+// }
 
 function CreateEvent() {
   return (
