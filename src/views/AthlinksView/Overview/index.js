@@ -45,7 +45,7 @@ const OverviewBlade = (props)=> {
       <div className={`${titleColor} my-12 md:my-24`}>
         <div className='flex flex-col md:flex-col lg:flex-row justify-center text-center lg:text-left h-full md:w-5/6 mx-auto'>
           <div className='shadow-lg self-center m-8'>
-            <img src={img}/>
+            <img className='overview-img lg:max-w-none' src={img}/>
           </div>
           <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/2 m-8 justify-center items-center lg:items-start'>
             <h2 className='text-4xl font-semibold'>{title}</h2>

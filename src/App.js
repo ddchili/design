@@ -32,8 +32,12 @@ import ActivityFeeds from './views/AthlinksView/ActivityFeeds'
 import VirtualRaces from './views/AthlinksView/VirtualRaces'
 
 import PlanfuOverview from './views/PlanfuView/Overview'
+import Product from './views/PlanfuView/Product'
 
 import PlanfuView from './views/PlanfuView'
+import ClientLanding from './views/PlanfuView/ClientLanding'
+import StaffMembers from './views/PlanfuView/StaffMembers'
+import Marketing from './views/PlanfuView/Marketing'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -148,18 +152,18 @@ function Planfu() {
         <Route path={`/overview`}>
           <PlanfuOverview/>
         </Route>
-        {/* <Route path={`${path}/event`}>
-          <CreateEventView/>
+        <Route path={`${path}/product`}>
+          <Product/>
         </Route>
-        <Route path={`/athlinks/arp`}>
-          <AthleteRacePage/>
+        <Route path={`${path}/client`}>
+          <ClientLanding/>
         </Route>
-        <Route path={`/athlinks/feeds`}>
-          <ActivityFeeds/>
+        <Route path={`${path}/staff`}>
+          <StaffMembers/>
         </Route>
-        <Route path={`/athlinks/vr`}>
-          <VirtualRaces/>
-        </Route> */}
+        <Route path={`${path}/marketing`}>
+          <Marketing/>
+        </Route>
       </Switch>
     </div>
   ) 

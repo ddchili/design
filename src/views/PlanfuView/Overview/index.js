@@ -13,9 +13,9 @@ import {
 // import Button from '@material-ui/core/Button'
 import { isMobile } from 'react-device-detect'
 
-import productDev from '../../../static/img/svg/overview_planfu_cal.svg'
+import productDev from '../../../static/img/raster/overview_planfu_cal.jpg'
 import overviewClinetLanding from '../../../static/img/raster/overview_planfu_clientLandingPages.jpg'
-import overviewStaff from '../../../static/img/svg/overview_planfu_staff.svg'
+import overviewStaff from '../../../static/img/raster/overview_planfu_staffList.jpg'
 import overviewMarketing from '../../../static/img/raster/overview_planfu_marketing.jpg'
 
 import brandAthlinks from '../../../static/img/svg/brand_athlinks.svg'
@@ -46,7 +46,7 @@ const OverviewBlade = (props)=> {
       <div className={`${titleColor} my-12 md:my-24`}>
         <div className='flex flex-col md:flex-col lg:flex-row justify-center text-center lg:text-left h-full md:w-5/6 mx-auto'>
           <div className={`${imgShadow ? 'shadow-lg' : ''} self-center m-8`}>
-            <img className= 'overview-img'src={img}/>
+            <img className='overview-img lg:max-w-none' src={img}/>
           </div>
           <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/2 m-8 justify-center items-center lg:items-start'>
             <h2 className='text-4xl font-semibold'>{title}</h2>
@@ -116,7 +116,7 @@ function Overview(props){
 
   console.log('topocId: ' , topicId)
 
-  const createEventLink = (<div><Link to={`${url}/event`}><h1>Create Event</h1></Link></div>)
+  const productLink = (<div><Link to={`${path}/product`}><h1>Product</h1></Link></div>)
   const arpLink = (<div><Link to={`${url}/arp`}><h1>Athlete Race Page</h1></Link></div>)
   const feesdsLink = (<div><Link to={`${url}/feeds`}><h1>Activity Feeds</h1></Link></div>)
   const vrLink = (<div><Link to={`${url}/vr`}><h1>Virtual Races</h1></Link></div>)
@@ -130,12 +130,12 @@ function Overview(props){
       <div className='container mx-auto'>
         <OverviewBlade
           img={productDev}
-          imgShadow={false}
+          imgShadow={true}
           title='Product Development'
           titleColor='planfu-orange'
           copyLeft={false}
           copy={createEventCopy}
-          view='event'/>
+          view='product'/>
         <OverviewBlade
           img={overviewClinetLanding}
           imgShadow={true}
@@ -143,15 +143,15 @@ function Overview(props){
           titleColor='planfu-orange'
           copyLeft={false}
           copy={ARPCopy}
-          view='arp'/>
+          view='client'/>
         <OverviewBlade
           img={overviewStaff}
-          imgShadow={false}
+          imgShadow={true}
           title='Staff Members'
           titleColor='planfu-orange'
           copyLeft={false}
           copy={feedsCopy}
-          view='feeds'/>
+          view='staff'/>
         <OverviewBlade
           img={overviewMarketing}
           imgShadow={true}
@@ -159,7 +159,7 @@ function Overview(props){
           titleColor='planfu-orange'
           copyLeft={false}
           copy={vrCopy}
-          view='vr'/>
+          view='marketing'/>
       </div>
     </div>
   )
