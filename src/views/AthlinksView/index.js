@@ -46,9 +46,7 @@ export default function AthlinksView(props){
   return (
     <div className='text-lg'>
       <Hero
-        copy='Athlinks is owned by Life Time Fitness along with Chronotrack providing 
-        race registration, timing and scoring, and race results for endurance athletic events 
-        including the New York Marathon and Spartan events.'
+        copy=''
         brand={brandAthlinks}
         workHero='athlinks'/>
       

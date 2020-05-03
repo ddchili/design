@@ -46,18 +46,17 @@ const OverviewBlade = (props)=> {
       <div className={`${titleColor} my-12 md:my-24`}>
         <div className='flex flex-col md:flex-col lg:flex-row justify-center text-center lg:text-left h-full md:w-5/6 mx-auto'>
           <div className={`${imgShadow ? 'shadow-lg' : ''} self-center m-8`}>
-            <img className='overview-img lg:max-w-none' src={img}/>
+            <img className='overview-img lg:max-w-none rounded-md' src={img}/>
           </div>
           <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/2 m-8 justify-center items-center lg:items-start'>
             <h2 className='text-4xl font-semibold'>{title}</h2>
             <p>{copy}</p>
-            {/* <Link to={`${url}/event`}> */}
-              <button className='text-base tracking-wide bg-gray-800 hover:bg-gray-700 text-white font-bold w-4/5
-              py-2 px-4 my-8 rounded-full uppercase'
+            <Link to={`${url}/${view}`} className='bg-gray-800 hover:bg-gray-700 w-4/5 py-2 px-4 my-8 rounded-full text-center'>
+              <button className='text-base tracking-wide text-white font-bold  uppercase'
                 onClick={handleOnClick}>
-                <Link to={`${url}/${view}`}>View Case Study</Link>
+                View Case Study
               </button>
-            {/* </Link> */}
+            </Link>
           </div>
         </div>
       </div>

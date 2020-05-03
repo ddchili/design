@@ -21,16 +21,15 @@ import { isMobile } from 'react-device-detect'
 
 import personas from '../../../static/img/raster/planfu_prod_personas.jpg'
 import featureContext from '../../../static/img/raster/planfu_prod_featureContext.jpg'
-import bladeDSExpert from '../../../static/img/raster/work_athlinks_blade_dsExpert.jpg'
-import bladeCollab from '../../../static/img/raster/work_athlinks_blade_dsCollab.jpg'
-import bladeSolSketch from '../../../static/img/raster/work_athlinks_blade_solSketch.jpg'
-import bladeVisLang from '../../../static/img/raster/work_athlinks_blade_visLang.jpg'
-import thumbBooth from '../../../static/img/raster/work_thumb_booth.jpg'
-import thumbStart from '../../../static/img/raster/work_thumb_startLine.jpg'
-import thumbTimers from '../../../static/img/raster/work_thumb_timers.jpg'
+import thumbSchedWire from '../../../static/img/raster/thumb_planfu_scheduleWire.jpg'
+import thumbStaffSched from '../../../static/img/raster/thumb_planfu_staffSched.jpg'
+import thumbMobileSched from '../../../static/img/raster/thumb_planfu_mobileSched.jpg'
 import thumbSolSketch from '../../../static/img/raster/work_athlinks_thumb_solSketch.jpg'
 import thumbEventDashboard from '../../../static/img/raster/work_thumb_evnetDashboard.jpg'
 import thumbTestBoard from '../../../static/img/raster/work_thumb_usertestBoard.jpg'
+
+import homeTarget from '../../../static/img/raster/planfu_product_homeTarget.jpg'
+import prodFeedback from '../../../static/img/raster/planfu_product_feedback.jpg'
 
 import brandAthlinks from '../../../static/img/svg/brand_athlinks.svg'
 
@@ -56,15 +55,28 @@ const Hero = (props) => {
   )
 }
 
-const CXThumbs = (props) => {
+const SchedThumbs = (props) => {
+  
+  const schedWire = `Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit varius 
+  ac ut risus.`
+
+  const schedView = `Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit varius 
+  ac ut risus.`
+
+  const schedMobile = `Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit varius 
+  ac ut risus.`
+
   return (
     <div className='flex flex-col md:flex-row lg:flex-row'>
       <ThumbInfo
-          thumb={thumbBooth} />
+          thumb={thumbSchedWire} 
+          caption={schedWire}/>
       <ThumbInfo
-          thumb={thumbStart} />
+          thumb={thumbStaffSched}
+          caption={schedView} />
       <ThumbInfo
-          thumb={thumbTimers} />
+          thumb={thumbMobileSched}
+          caption={schedMobile} />
     </div>
   )
 }
@@ -145,7 +157,26 @@ export default function Product(props){
           titleColor='athlinks-blue'
           copyLeft={false}
           copy={athlinksCopy}>
-            <CXThumbs title='Hello There This is a title'/>
+            <SchedThumbs title='Hello There This is a title'/>
+            <SectionBorder/>
+        </Blade>
+
+        <Blade
+          sectionTitle='Defining the Problem'
+          red={false}
+          img={homeTarget}
+          title='Customer Expereince Journey Mapping'
+          titleColor='athlinks-blue'
+          copyLeft={true}
+          copy={athlinksCopy}/>
+        <Blade
+          red={false}
+          img={prodFeedback}
+          title='Onsite - Building Empathy for the Human'
+          titleColor='athlinks-blue'
+          copyLeft={false}
+          copy={athlinksCopy}>
+            <SchedThumbs title='Hello There This is a title'/>
             <SectionBorder/>
         </Blade>
       </div>

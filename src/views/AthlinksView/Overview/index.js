@@ -50,13 +50,12 @@ const OverviewBlade = (props)=> {
           <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/2 m-8 justify-center items-center lg:items-start'>
             <h2 className='text-4xl font-semibold'>{title}</h2>
             <p>{copy}</p>
-            {/* <Link to={`${url}/event`}> */}
-              <button className='text-base tracking-wide bg-gray-800 hover:bg-gray-700 text-white font-bold w-4/5
-              py-2 px-4 my-8 rounded-full uppercase'
+            <Link to={`${url}/${view}`} className='bg-gray-800 hover:bg-gray-700 w-4/5 py-2 px-4 my-8 rounded-full text-center'>
+              <button className='text-base tracking-wide text-white font-bold  uppercase'
                 onClick={handleOnClick}>
-                <Link to={`${url}/${view}`}>View Case Study</Link>
+                View Case Study
               </button>
-            {/* </Link> */}
+            </Link>
           </div>
         </div>
       </div>
