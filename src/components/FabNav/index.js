@@ -100,12 +100,13 @@ export default function FabNav() {
   // const PlayLink = props => <Link to={'/play'} {...props} />
   // const ContactLink = props => <Link to={'/contact'} {...props} />
 
-  const HomeLink = React.forwardRef((props, ref) => <Link to={'/'} {...props} ref={ref} />);
-  const AthlinksLink = React.forwardRef((props, ref) => <Link to={'/athlinks'} {...props} ref={ref} />);
-  const PlayLink = React.forwardRef((props, ref) => <Link to={'/play'} {...props}  ref={ref} />);
-  const ContactLink = React.forwardRef((props, ref) => <Link to={'/contact'} {...props} ref={ref} />);
+  const HomeLink = React.forwardRef((props, ref) => <Link to={'/'} {...props} ref={ref} />)
+  const AthlinksLink = React.forwardRef((props, ref) => <Link to={'/athlinks'} {...props} ref={ref} />)
+  const PlanfuLink = React.forwardRef((props, ref) => <Link to={'/planfu'} {...props} ref={ref} />)
+  const PlayLink = React.forwardRef((props, ref) => <Link to={'/play'} {...props}  ref={ref} />)
+  const ContactLink = React.forwardRef((props, ref) => <Link to={'/contact'} {...props} ref={ref} />)
 
-  const links = [HomeLink, AthlinksLink, PlayLink, ContactLink]
+  const links = [HomeLink, AthlinksLink, PlanfuLink, PlayLink, ContactLink]
 
   const list = (anchor) => (
 
@@ -118,7 +119,7 @@ export default function FabNav() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Home', 'Athlinks', 'Play', 'Conatct'].map((text, index) => (
+        {['Home', 'Athlinks', 'Planfu', 'Play', 'Conatct'].map((text, index) => (
           <ListItem
             button key={text}
             component={links[index]}

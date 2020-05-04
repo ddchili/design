@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Overview from '../Overview'
-import Blade from '../../../components/Blade'
+import Blade, {BladeLarge} from '../../../components/Blade'
 import Synopsis from '../../../components/Synopsis'
 import ThumbInfo from '../../../components/ThumbInfo'
 
@@ -24,7 +24,10 @@ import featureContext from '../../../static/img/raster/planfu_prod_featureContex
 import thumbSchedWire from '../../../static/img/raster/thumb_planfu_scheduleWire.jpg'
 import thumbStaffSched from '../../../static/img/raster/thumb_planfu_staffSched.jpg'
 import thumbMobileSched from '../../../static/img/raster/thumb_planfu_mobileSched.jpg'
-import thumbSolSketch from '../../../static/img/raster/work_athlinks_thumb_solSketch.jpg'
+import scheduleLarge from '../../../static/img/raster/planfu_product_cal_lg.jpg'
+import clientMgmt from '../../../static/img/raster/planfu_product_clientMgmt.jpg'
+import integration from '../../../static/img/raster/planfu_product_integration.jpg'
+
 import thumbEventDashboard from '../../../static/img/raster/work_thumb_evnetDashboard.jpg'
 import thumbTestBoard from '../../../static/img/raster/work_thumb_usertestBoard.jpg'
 
@@ -35,25 +38,6 @@ import brandAthlinks from '../../../static/img/svg/brand_athlinks.svg'
 
 import './styles.scss'
 
-
-const Hero = (props) => {
-  return (
-    <section className='bg-cover bg-center work-hero w-full text-left athlinks-blue'>
-      <div className='md:w-3/6 lg:w-3/6 m-auto flex flex-wrap'>
-        <div className='flex flex-col items-center md:flex-col lg:flex-row w-full mb-8 p-10'>
-          <div className='w-full lg:w-2/3 m-2 lg:ml-12'>
-            <div className='mb-4'>
-              <img src={brandAthlinks}/>
-            </div>
-            <p className='text-white text-lg'>
-              {props.copy}
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
 
 const SchedThumbs = (props) => {
   
@@ -85,7 +69,7 @@ const DS1Thumbs = (props) => {
   return (
     <div className='flex flex-col md:flex-row lg:flex-row'>
       <ThumbInfo
-          thumb={thumbSolSketch} />
+          thumb={thumbSchedWire} />
       <ThumbInfo
           thumb={thumbEventDashboard} />
       <ThumbInfo
@@ -179,6 +163,30 @@ export default function Product(props){
             <SchedThumbs title='Hello There This is a title'/>
             <SectionBorder/>
         </Blade>
+
+        <BladeLarge
+          red={false}
+          img={scheduleLarge}
+          title='Event Dashboard'
+          titleColor='athlinks-blue'
+          copyLeft={true}
+          copy={athlinksCopy}/>
+
+        <BladeLarge
+          red={false}
+          img={clientMgmt}
+          title='Event Dashboard'
+          titleColor='athlinks-blue'
+          copyLeft={true}
+          copy={athlinksCopy}/>
+
+        <BladeLarge
+          red={false}
+          img={integration}
+          title='Event Dashboard'
+          titleColor='athlinks-blue'
+          copyLeft={true}
+          copy={athlinksCopy}/>
       </div>
     </div>
   )
