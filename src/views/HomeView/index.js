@@ -67,8 +67,30 @@ const Blade = (props)=> {
 
   const { path, url } = useRouteMatch()
 
-  // isMobile - force col layout text first img second
-  if(isMobile ? true : copyLeft){
+if(isMobile){
+  return (
+    <div className={`${titleColor} blade ${red} mb-6 md:mb-64 text-lg`}>
+      <Fade bottom>
+        <div className='flex flex-col md:flex-col lg:flex-row items-center justify-center text-left h-full py-12'>
+          <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/4 m-2 md:m-8 lg:m-8 xl:m-8'>
+            <h2 className='text-3xl font-semibold text-center'><Link to={`/${view}`}>{title}</Link></h2>
+          </div>
+          <div className='shadow-lg self-center m-8 blade-screen'>
+            <img src={img}/>
+          </div>
+          <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/4 m-2 md:m-8 lg:m-8 xl:m-8'>
+            <p>{copy}</p>
+            <Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 self-center w-4/5 py-2 px-4 my-8 rounded-full text-center'>
+              <button className='text-base tracking-wide text-white font-bold  uppercase'>
+                View Projects
+              </button>
+            </Link>
+          </div>
+        </div>
+      </Fade>
+    </div>
+  )
+} else if(copyLeft){
     return (
       <div className={`${titleColor} blade ${red} mb-6 md:mb-64 text-lg`}>
         <Fade bottom>
@@ -89,30 +111,30 @@ const Blade = (props)=> {
         </Fade>
       </div>
     )
-  }
-  else{
-    return (
-      <div className={`${titleColor} blade ${red} mb-6 md:mb-64 text-lg`}>
-        <Fade bottom>
-          <div className='flex flex-col md:flex-col lg:flex-row items-center justify-center text-left h-full py-12'>
-            <div className='shadow-lg self-center m-8 blade-screen'>
-              <img src={img}/>
+  } else{
+      return (
+        <div className={`${titleColor} blade ${red} mb-6 md:mb-64 text-lg`}>
+          <Fade bottom>
+            <div className='flex flex-col md:flex-col lg:flex-row items-center justify-center text-left h-full py-12'>
+              <div className='shadow-lg self-center m-8 blade-screen'>
+                <img src={img}/>
+              </div>
+              <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/4 m-2 md:m-8 lg:m-8 xl:m-8'>
+                <h2 className='text-3xl font-semibold'><Link to={`/${view}`}>{title}</Link></h2>
+                <p>{copy}</p>
+                <Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 w-4/5 py-2 px-4 my-8 rounded-full text-center'>
+                <button className='text-base tracking-wide text-white font-bold  uppercase'>
+                  View Projects
+                </button>
+              </Link>
+              </div>
             </div>
-            <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/4 m-2 md:m-8 lg:m-8 xl:m-8'>
-              <h2 className='text-3xl font-semibold'><Link to={`/${view}`}>{title}</Link></h2>
-              <p>{copy}</p>
-              <Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 w-4/5 py-2 px-4 my-8 rounded-full text-center'>
-              <button className='text-base tracking-wide text-white font-bold  uppercase'>
-                View Projects
-              </button>
-            </Link>
-            </div>
-          </div>
-        </Fade>
-      </div>
-    )
+          </Fade>
+        </div>
+      )
+    }
   }
-}
+
 
 
 export default function HomeView(props){

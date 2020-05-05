@@ -145,7 +145,7 @@ export function OverviewBackground(props){
     <div className='w-full md:w-2/3 lg:w-2/3 align-center text-center mx-auto my-16 px-4'>
       <div className={``}>
         <div className='flex flex-col md:flex-col items-center justify-center text-left h-full'>
-          <div className='w-full md:w-full lg:w-5/6 m-2 md:m-6 lg:m-6 xl:m-6 border-b pb-4 border-gray-400'>
+          <div className='w-full md:w-full lg:w-2/3 m-2 md:m-6 lg:m-6 xl:m-6 border-b pb-4 border-gray-400'>
             <h2 className='text-4xl font-semibold my-2 uppercase'>{title}</h2>
             <p>{copy}</p>
           </div>
