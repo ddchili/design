@@ -38,7 +38,7 @@ const Hero = (props) => {
               Hi!
             </h1>
             <h1 className='z-10 relative text-3xl font-semibold absolute'>
-              I'm David Demmer
+              I'm David Demmer.
             </h1>
             <p className='text-gray-700 text-lg'>
               I create People-Cenetred Design experiences specializing in enterprise and consumer design 
@@ -80,10 +80,9 @@ if(isMobile){
           </div>
           <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/4 m-2 md:m-8 lg:m-8 xl:m-8'>
             <p>{copy}</p>
-            <Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 self-center w-4/5 py-2 px-4 my-8 rounded-full text-center'>
-              <button className='text-base tracking-wide text-white font-bold  uppercase'>
+            <Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 self-center w-4/5 py-2 px-4 my-8 rounded-full 
+              text-center text-base tracking-wide text-white font-bold uppercase'>
                 View Projects
-              </button>
             </Link>
           </div>
         </div>
@@ -98,11 +97,10 @@ if(isMobile){
             <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/4 m-2 md:m-8 lg:m-8 xl:m-8'>
               <h2 className='text-3xl font-semibold'><Link to={`/${view}`}>{title}</Link></h2>
               <p>{copy}</p>
-              <Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 w-4/5 py-2 px-4 my-8 rounded-full text-center'>
-              <button className='text-base tracking-wide text-white font-bold  uppercase'>
-                View Projects
-              </button>
-            </Link>
+              <Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 self-center w-4/5 py-2 px-4 my-8 rounded-full 
+                text-center text-base tracking-wide text-white font-bold uppercase'>
+                  View Projects
+              </Link>
             </div>
             <div className='shadow-lg self-center m-8 blade-screen'>
               <img src={img}/>
@@ -122,10 +120,9 @@ if(isMobile){
               <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/4 m-2 md:m-8 lg:m-8 xl:m-8'>
                 <h2 className='text-3xl font-semibold'><Link to={`/${view}`}>{title}</Link></h2>
                 <p>{copy}</p>
-                <Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 w-4/5 py-2 px-4 my-8 rounded-full text-center'>
-                <button className='text-base tracking-wide text-white font-bold  uppercase'>
+                <Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 self-center w-4/5 py-2 px-4 my-8 rounded-full 
+                text-center text-base tracking-wide text-white font-bold uppercase'>
                   View Projects
-                </button>
               </Link>
               </div>
             </div>

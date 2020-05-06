@@ -64,7 +64,7 @@ function Overview(props){
   const feedsCopy = `Activity feeds enabled social engagement with the main point in answering 
   the question, “What races are my friends doing?”`
 
-  const vrCopy = `WIth the advent of COVID-19, we’ve witnessed a shutdown of many aspects of 
+  const vrCopy = `With the advent of COVID-19, we’ve witnessed a shutdown of many aspects of 
   everyday our lives, including endurance athletic events. Virtual Races are here to stay. `
 
   // const  match = useRouteMatch()

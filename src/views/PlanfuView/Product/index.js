@@ -31,6 +31,10 @@ import integration from '../../../static/img/raster/planfu_product_integration.j
 import thumbEventDashboard from '../../../static/img/raster/work_thumb_evnetDashboard.jpg'
 import thumbTestBoard from '../../../static/img/raster/work_thumb_usertestBoard.jpg'
 
+import thumbLifecycle from '../../../static/img/raster/thumb_planfu_product_lifecycle.jpg'
+import thumbClientExp from '../../../static/img/raster/thumb_planfu_product_ClientExp.jpg'
+import thumbPricing from '../../../static/img/raster/thumb_planfu_prod_pricing.jpg'
+
 import homeTarget from '../../../static/img/raster/planfu_product_homeTarget.jpg'
 import prodFeedback from '../../../static/img/raster/planfu_product_feedback.jpg'
 
@@ -41,14 +45,13 @@ import './styles.scss'
 
 const SchedThumbs = (props) => {
   
-  const schedWire = `Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit varius 
-  ac ut risus.`
+  const schedWire = `The faster a customer could set up their schedule upon onboarding 
+  the better feel they would gain from the overall experience.`
 
-  const schedView = `Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit varius 
-  ac ut risus.`
+  const schedView = `Onboarding Staff Members was crucial for the adoption of a new platform.`
 
-  const schedMobile = `Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit varius 
-  ac ut risus.`
+  const schedMobile = `Internally seeing their staff members’ daily availability assisted in 
+  the onsite walkin behaviors of our customers’ customers. `
 
   return (
     <div className='flex flex-col md:flex-row lg:flex-row'>
@@ -65,15 +68,28 @@ const SchedThumbs = (props) => {
   )
 }
 
-const DS1Thumbs = (props) => {
+const WebsiteThumbs = (props) => {
+
+  const lifecycleCopy = `Using the knowledge of our customer’s appointment lifecycle, 
+  we brought empathy to new prospects of our plagtform. `
+
+  const clientExpCopy = `One of the first things our prospective customers asked was 
+  how does this look for my clients when they schedule an appointment? `
+
+  const pricingCopy = `Being a self-funded startup, we are able to offer a forever 
+  freemium package as part of our onboarding new users. `
+
   return (
     <div className='flex flex-col md:flex-row lg:flex-row'>
       <ThumbInfo
-          thumb={thumbSchedWire} />
+          thumb={thumbLifecycle} 
+          caption={lifecycleCopy}/>
       <ThumbInfo
-          thumb={thumbEventDashboard} />
+          thumb={thumbClientExp}
+          caption={clientExpCopy} />
       <ThumbInfo
-          thumb={thumbTestBoard} />
+          thumb={thumbPricing}
+          caption={pricingCopy} />
     </div>
   )
 }
@@ -92,14 +108,81 @@ export default function Product(props){
   suscipit faucibus. Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit 
   varius ac ut risus. Aliquam erat volutpat. Vivamus elementum vestibulum ligula.`
 
-  const challenge = `Timers use our hardware to time athletic events, but they may use 
-  different scoring platforms to push results to. How do we ensure Athlinks members 
-  can rely on Athlinks for all of their race results in one place?`
+  const challenge = `Develop a product from ground up to address the unmet needs of 
+  a market segment within the health, wellness, and fitness domain. Embark into uncharted 
+  waters for my research and inform our team to help steer the product feature development 
+  targets. `
 
-  const background = `In at libero varius, rutrum leo eu, eleifend purus. Etiam 
-  vulputate fringilla neque sit amet gravida. Vestibulum id turpis vestibulum felis 
-  suscipit faucibus. Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit 
-  varius ac ut risus. Aliquam erat volutpat. Vivamus elementum vestibulum ligula.`
+  const background = `We started with targeting massage therapists exclusively and expanded 
+  into sports rehabilitation and recovery therapists. Learning from having thoughtful 
+  conversations with our customers and non-customers has been key to generating customer loyalty. `
+
+  const defineTheProbCopy = (
+    <div>
+      <p>After conducting initial discovery interviews, we started to form hypotheses around some 
+        of the deficiencies in the current market solutions for client scheduling. Following up 
+        with competitive analysis and market size analysis, it became apparent that paper and 
+        pencil were much more approachable and natural than the digital tooling offered. </p>
+      <br/>
+      <p>While they had unmet needs of bringing their scheduling to an online platform, these 
+        professionals felt that they were paying too much for features they never used. </p>
+    </div>
+  )
+
+  const onboardingCopy = (
+    <div>
+      <p>User onboarding is critical to a successful engagement with any platform. Natural user 
+        affordances may be complimented with redundant messaging to empower users of the system 
+        with confidence to discover and explore. </p>
+      <br/>
+      <p>Understanding what core questions our non-customers had for any given platform helped 
+        us guide what steps they needed to complete in order to bubble-up the feature sets that 
+        most directly related to their unmet needs.</p>
+    </div>
+  )
+
+  const firstImpressionsCopy = (
+    <div>
+      <p>The immediate impression we valued was an empathetic one. Once a prospect landed on our 
+        homepage, we wanted to evoke a viscreal relationship to the content. </p>
+      <br/>
+      <p>Clearly laying out key messaging and value propositions helped build trust. We optimized 
+        our message as we learned more by utilizing click-through rates from Google Analytics.</p>
+    </div>
+  )
+
+  const feedbackCopy = (
+    <div>
+      <p>By reflecting our customer testimonials upfront for users to read helped solidify their 
+        needs for an easier platform and only the features sets they needed, without the bloat.</p>
+      <br/>
+    </div>
+  )
+
+  const schedLargeCopy = (
+    <div>
+      <p>Simplifying the schedule view while allowing for the most important data to be revealed 
+        without having to dig for it. Availability, unconfirmed versus confirmed appointments, and 
+        the details of each. </p>
+      <br/>
+    </div>
+  )
+  
+  const clientHistoryCopy = (
+    <div>
+      <p>Ensuring customer satisfaction for each appointment, customers needed to easily access their 
+        client’s history for follow-up and to determine what is working and not working. </p>
+      <br/>
+    </div>
+  )
+
+  const integrationsCopy = (
+    <div>
+      <p>For the users with existing websites, we built custom integrations that allows for them to 
+        customize the experience by theming and layouts to fit best with their brand.  </p>
+      <br/>
+    </div>
+  )
   
   // const  match = useRouteMatch()
   let { path, url } = useRouteMatch();
@@ -114,16 +197,12 @@ export default function Product(props){
 
   return (
     <div className='text-lg'>
-      {/* <Hero
-        copy='Athlinks is owned by Life Time Fitness along with Chronotrack providing 
-        race registration, timing and scoring, and race results for endurance athletic events 
-        including the New York Marathon and Spartan events.'/> */}
         {overviewLink}
       <Synopsis
-        title='Product'
-        target='Athletes and Race Directors'
+        title='Product Development'
+        target='Health, Wellness, & Fitness Professionals'
         challenge={challenge}
-        role='Director, facilitaor, researcher, usability tester'
+        role='R&D, Designer, Front-End Developer, BizDev, Marketer, SEO'
         background={background}/>
       <div className='container mx-auto'>
         <Blade
@@ -131,62 +210,63 @@ export default function Product(props){
           red={false}
           img={personas}
           title='Customer Expereince Journey Mapping'
-          titleColor='athlinks-blue'
+          titleColor='planfu-orange'
           copyLeft={true}
-          copy={athlinksCopy}/>
+          copy={defineTheProbCopy}/>
         <Blade
           red={false}
           img={featureContext}
-          title='Onsite - Building Empathy for the Human'
-          titleColor='athlinks-blue'
+          title='Onboarding, A First Class Citizen'
+          titleColor='planfu-orange'
           copyLeft={false}
-          copy={athlinksCopy}>
+          copy={onboardingCopy}>
             <SchedThumbs title='Hello There This is a title'/>
             <SectionBorder/>
         </Blade>
 
         <Blade
-          sectionTitle='Defining the Problem'
+          sectionTitle='Resonating with Our Target'
           red={false}
           img={homeTarget}
-          title='Customer Expereince Journey Mapping'
-          titleColor='athlinks-blue'
+          title='First Impressions Are Lasting Ones'
+          titleColor='planfu-orange'
           copyLeft={true}
-          copy={athlinksCopy}/>
+          copy={firstImpressionsCopy}/>
         <Blade
           red={false}
           img={prodFeedback}
-          title='Onsite - Building Empathy for the Human'
-          titleColor='athlinks-blue'
+          title='Testimonials Build Empathy'
+          titleColor='planfu-orange'
           copyLeft={false}
-          copy={athlinksCopy}>
-            <SchedThumbs title='Hello There This is a title'/>
+          copy={feedbackCopy}>
+            <WebsiteThumbs title='Hello There This is a title'/>
             <SectionBorder/>
         </Blade>
 
         <BladeLarge
+        sectionTitle='Planfu, an Enterprise Product Solution'
           red={false}
           img={scheduleLarge}
-          title='Event Dashboard'
-          titleColor='athlinks-blue'
+          title='Scheduling and Availability'
+          titleColor='planfu-orange'
           copyLeft={true}
-          copy={athlinksCopy}/>
+          copy={schedLargeCopy}/>
 
         <BladeLarge
           red={false}
           img={clientMgmt}
-          title='Event Dashboard'
-          titleColor='athlinks-blue'
+          title='Client History'
+          titleColor='planfu-orange'
           copyLeft={true}
-          copy={athlinksCopy}/>
+          copy={clientHistoryCopy}/>
 
         <BladeLarge
           red={false}
           img={integration}
-          title='Event Dashboard'
-          titleColor='athlinks-blue'
+          title='Website Integrations'
+          titleColor='planfu-orange'
           copyLeft={true}
-          copy={athlinksCopy}/>
+          copy={integrationsCopy}/>
       </div>
     </div>
   )

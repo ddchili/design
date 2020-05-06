@@ -25,26 +25,25 @@ import './styles.scss'
 
 function Overview(props){
 
-  const challenge = `Timers use our hardware to time athletic events, but they may use 
-  different scoring platforms to push results to. How do we ensure Athlinks members 
-  can rely on Athlinks for all of their race results in one place?`
 
-  const background = `Athlinks and Chronotrack are entities owned and operated by 
-  Life Time as they’re complimentary to each other's strengths in the endurance athletic 
-  event industry.`
+  const background = `After our success with MapMyFitness, I started  a venture with the same two colleagues 
+  to address needs in the market for a simple online client scheduling tool. While we are completely self-funded, 
+  we continue to grow our opportunities and keep our chops up in the nitty-gritty of software development.`
 
-  const createEventCopy = `Connecting the source of the event from its inception all the way 
-  to race day final results, a commitment to the athlete.`
+  const prodDevCopy = `Being a small team. our product development life cycle encompasses all aspects of business 
+  development. We each learned to wear many hats.  `
 
-  const ARPCopy = `“How do I share my race details with my friends so they can track me?” 
-  That was one the biggest problems with athletes where they wanted to share all their race 
-  details with friends and family before the event. `
+  const clientlandingCopy = `While we have an embeddable widget for our customers to add to their websites, 
+  we found that a lot of them did not have a website presence. Enter our latest feature release, 
+  Client Landing Pages.`
 
-  const feedsCopy = `Activity feeds enabled social engagement with the main point in answering 
-  the question, “What races are my friends doing?”`
+  const staffCopy = `We initially released Planfu for the one-person shop. We started getting feedback 
+  and our customers using multiple accounts for their staff members. To expand our market, we developed 
+  Staff Members features for larger facilities.`
 
-  const vrCopy = `WIth the advent of COVID-19, we’ve witnessed a shutdown of many aspects of 
-  everyday our lives, including endurance athletic events. Virtual Races are here to stay. `
+  const marketingCopy = `Diving into digital campaigns, we developed our muscle for channel markets and which worked 
+  and which ones did not. We also learned that the best channels are more authentic, not always just an ad on 
+  your Facebook feed. `
 
   // const  match = useRouteMatch()
   let { path, url } = useRouteMatch()
@@ -62,7 +61,7 @@ function Overview(props){
     <div className='text-lg'>
       <OverviewBackground
           title='Planfu'
-          target='Athletic Endurance Events'
+          target='Health, Wellness, & Fitness Professionals'
           copy={background}/>
       <div className='container mx-auto'>
         <OverviewBlade
@@ -71,7 +70,7 @@ function Overview(props){
           title='Product Development'
           titleColor='planfu-orange'
           copyLeft={false}
-          copy={createEventCopy}
+          copy={prodDevCopy}
           view='product'/>
         <OverviewBlade
           img={overviewClinetLanding}
@@ -79,7 +78,7 @@ function Overview(props){
           title='Client Landing Pages'
           titleColor='planfu-orange'
           copyLeft={false}
-          copy={ARPCopy}
+          copy={clientlandingCopy}
           view='client'/>
         <OverviewBlade
           img={overviewStaff}
@@ -87,7 +86,7 @@ function Overview(props){
           title='Staff Members'
           titleColor='planfu-orange'
           copyLeft={false}
-          copy={feedsCopy}
+          copy={staffCopy}
           view='staff'/>
         <OverviewBlade
           img={overviewMarketing}
@@ -95,7 +94,7 @@ function Overview(props){
           title='Marketing'
           titleColor='planfu-orange'
           copyLeft={false}
-          copy={vrCopy}
+          copy={marketingCopy}
           view='marketing'/>
       </div>
     </div>

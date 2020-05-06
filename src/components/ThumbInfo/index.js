@@ -12,7 +12,7 @@ export default function ThumbInfo(props) {
   return (
     <div className='w-full md:w-1/3 lg:w-1/3 mt-24'>
       <div className='flex flex-col items-center px-12 text-left'>
-        <div className=''>
+        <div className='shadow-lg'>
           <img className='rounded-sm' src={thumb}/>
         </div>
         <div>

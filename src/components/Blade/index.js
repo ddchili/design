@@ -70,7 +70,7 @@ export default function Blade(props) {
   }
 }
 
-export function  OverviewBlade(props){
+export function OverviewBlade(props){
   const img = props.img ? props.img : 'no img src'
   const title = props.title ? props.title : 'no title'
   const titleColor = props.titleColor ? props.titleColor : 'black'
@@ -86,9 +86,6 @@ export function  OverviewBlade(props){
         </div>
   )
 
-  const handleOnClick = (target) =>{
-
-  }
  
   if(isMobile){
     return (
@@ -101,11 +98,9 @@ export function  OverviewBlade(props){
             </div>
             <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/2 m-8 mt-0 justify-center items-center lg:items-start'>
               <p>{copy}</p>
-              <Link to={`${url}/${view}`} className='bg-gray-800 hover:bg-gray-700 w-4/5 py-2 px-4 my-8 rounded-full text-center'>
-                <button className='text-base tracking-wide text-white font-bold  uppercase'
-                  onClick={handleOnClick}>
+              <Link to={`${url}/${view}`} className='bg-gray-800 hover:bg-gray-700 w-4/5 py-2 px-4 my-8 rounded-full text-center 
+                text-base tracking-wide text-white font-bold uppercase'>
                   View Case Study
-                </button>
               </Link>
             </div>
           </div>
@@ -124,11 +119,9 @@ export function  OverviewBlade(props){
             <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/2 m-8 justify-center items-center lg:items-start'>
               <h2 className='text-4xl font-semibold'>{title}</h2>
               <p>{copy}</p>
-              <Link to={`${url}/${view}`} className='bg-gray-800 hover:bg-gray-700 w-4/5 py-2 px-4 my-8 rounded-full text-center'>
-                <button className='text-base tracking-wide text-white font-bold  uppercase'
-                  onClick={handleOnClick}>
+              <Link to={`${url}/${view}`} className='bg-gray-800 hover:bg-gray-700 w-4/5 py-2 px-4 my-8 rounded-full text-center 
+                text-base tracking-wide text-white font-bold uppercase'>
                   View Case Study
-                </button>
               </Link>
             </div>
           </div>
