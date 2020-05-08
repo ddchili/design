@@ -23,6 +23,7 @@ export default function Blade(props) {
   const titleColor = props.titleColor ? props.titleColor : 'black'
   const copy = props.copy ? props.copy : 'no copy supplied'
   const sectionTitle = props.sectionTitle ?? false
+  const imgShadow = props.imgShadow ?? false
 
   const sectionTitleBlock = (
     <div className='text-3xl font-semibold text-left ml-8 lg:ml-12 mt-24'>
@@ -41,7 +42,7 @@ export default function Blade(props) {
               <h2 className='text-1xl font-semibold tracking-widest uppercase'>{props.title}</h2>
               <div>{props.copy}</div>
             </div>
-            <div className='shadow-lg self-center m-8'>
+            <div className={`${imgShadow ? 'shadow-lg' : ''} self-center m-8`}>
               <img className='rounded-md' src={img}/>
             </div>
           </div>
@@ -55,7 +56,7 @@ export default function Blade(props) {
       <Fade bottom duration={500}>
         <div className={`${titleColor} mb-8`}>
           <div className='flex flex-col md:flex-col lg:flex-row justify-center text-left h-full'>
-            <div className='shadow-lg self-center m-8'>
+            <div className={`${imgShadow ? 'shadow-lg' : ''} self-center m-8`}>
               <img className='rounded-md' src={img}/>
             </div>
             <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/2 m-8'>
@@ -187,6 +188,7 @@ export function BladeColumn(props){
   const title = props.title ? props.title : 'no title'
   const titleColor = props.titleColor ? props.titleColor : 'black'
   const copy = props.copy ? props.copy : 'no copy supplied'
+  const imgShadow = props.imgShadow ?? false
 
   return(
     <Fade bottom duration={500}>
@@ -196,7 +198,7 @@ export function BladeColumn(props){
             <h2 className='text-1xl font-semibold tracking-widest uppercase'>{title}</h2>
             <div>{copy}</div>
           </div>
-          <div className='shadow-lg self-center m-2'>
+          <div className={`${imgShadow ? 'shadow-lg' : ''} self-center m-2`}>
             <img className='rounded-md'src={img}/>
           </div>
         </div>
