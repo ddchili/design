@@ -22,16 +22,22 @@ import { isMobile } from 'react-device-detect'
 import screenCX from '../../../static/img/raster/work_athlinks_cx.jpg'
 
 import bladeClientServicesMobile from '../../../static/img/raster/planfu_clientlanding_clientServiceMobile.png'
-import bladeClientHome from '../../../static/img/raster/planfu_clientlanding_ clientHomeMobile.png'
+import bladeClientHome from '../../../static/img/raster/planfu_clientlanding_clientHomeMobile.png'
 
 import bladeWidgetSrvc from '../../../static/img/raster/planfu_widget_service.jpg'
 import bladeWidgetDate from '../../../static/img/raster/planfu_widget_date.jpg'
 import thumbClientWire1 from '../../../static/img/raster/planfu_thumb_client_wire1.jpg'
 import thumbClientWire2 from '../../../static/img/raster/planfu_thumb_client_wire2.jpg'
 import thumbClientWire3 from '../../../static/img/raster/planfu_thumb_client_wire3.jpg'
+import thumbClientWire4 from '../../../static/img/raster/planfu_thumb_client_wire4.jpg'
+import thumbClientWire5 from '../../../static/img/raster/planfu_thumb_client_wire5.jpg'
+import thumbClientWire6 from '../../../static/img/raster/planfu_thumb_client_wire6.jpg'
 import thumbServiceCrimson from '../../../static/img/raster/planfu_thumb_client_serviceCrimson.jpg'
 import thumbSchedForrest from '../../../static/img/raster/planfu_thumb_client_schedForrest.jpg'
 import thumbFormYellow from '../../../static/img/raster/planfu_thumb_client_formYellow.jpg'
+import thumbWidgetHeader from '../../../static/img/raster/planfu_thumb_widgetHeader.jpg'
+import thumbWidgetFooter from '../../../static/img/raster/planfu_thumb_widgetFooter.jpg'
+import thumbWidgetNone from '../../../static/img/raster/planfu_thumb_widgetNone.jpg'
 import bladeAdminLanding from '../../../static/img/raster/planfu_blade_adminLanding.jpg'
 import bladeAdminWidget from '../../../static/img/raster/planfu_blade_adminWidget.jpg'
 import bladeAdminThemes from '../../../static/img/raster/planfu_blade_adminThemes.jpg'
@@ -62,7 +68,7 @@ const BladeMobileServiceColumns = () => {
         img={bladeClientHome}
         imgShadow={false}
         title='Design Evolution'
-        titleColor='athlinks-blue'
+        titleColor='planfu-orange'
         copyLeft={true}
         copy={athlinksCopy}>
       </BladeColumn>
@@ -72,7 +78,7 @@ const BladeMobileServiceColumns = () => {
         img={bladeClientServicesMobile}
         imgShadow={false}
         title='Design Evolution'
-        titleColor='athlinks-blue'
+        titleColor='planfu-orange'
         copyLeft={true}
         copy={athlinksCopy}>
       </BladeColumn>
@@ -97,7 +103,7 @@ const BladeMobileSchedColumns = () => {
         img={bladeClientSchedMobile}
         imgShadow={false}
         title='Design Evolution'
-        titleColor='athlinks-blue'
+        titleColor='planfu-orange'
         copyLeft={true}
         copy={athlinksCopy}>
       </BladeColumn>
@@ -107,7 +113,7 @@ const BladeMobileSchedColumns = () => {
         img={bladeClientFormMobile}
         imgShadow={false}
         title='Design Evolution'
-        titleColor='athlinks-blue'
+        titleColor='planfu-orange'
         copyLeft={true}
         copy={athlinksCopy}>
       </BladeColumn>
@@ -115,8 +121,17 @@ const BladeMobileSchedColumns = () => {
   )
 }
 
+const SectionTitleBlock = (props) => {
+  const sectionTitle = props.sectionTitle ?? ''
+  return (
+    <div className='text-3xl font-semibold text-left ml-8 mt-24'>
+      <h3>{sectionTitle}</h3>
+    </div>
+  )
+}
 
-const ClientWireThumbs = (props) => {
+
+const ClientWireThumbsRow1 = (props) => {
 
   const thumbWire1Caption = `Sed quis diam quis quam pellentesque rutrum ornare mattis ante. 
   Quisque ac urna tincidunt, vulputate metus ut, feugiat nunc.`
@@ -138,6 +153,33 @@ const ClientWireThumbs = (props) => {
           caption={thumbWire2Caption} />
       <ThumbInfo
           thumb={thumbClientWire3}
+          caption={thumbWire3Caption} />
+    </div>
+  )
+}
+
+const ClientWireThumbsRow2 = (props) => {
+
+  const thumbWire1Caption = `Sed quis diam quis quam pellentesque rutrum ornare mattis ante. 
+  Quisque ac urna tincidunt, vulputate metus ut, feugiat nunc.`
+
+  const thumbWire2Caption = `Sed quis diam quis quam pellentesque rutrum ornare mattis ante. 
+  Quisque ac urna tincidunt, vulputate metus ut, feugiat nunc.`
+
+  const thumbWire3Caption = `Sed quis diam quis quam pellentesque rutrum ornare mattis ante. 
+  Quisque ac urna tincidunt, vulputate metus ut, feugiat nunc.`
+
+
+  return (
+    <div className='flex flex-col md:flex-row lg:flex-row'>
+      <ThumbInfo
+          thumb={thumbClientWire4}
+          caption={thumbWire1Caption} />
+      <ThumbInfo
+          thumb={thumbClientWire5}
+          caption={thumbWire2Caption} />
+      <ThumbInfo
+          thumb={thumbClientWire6}
           caption={thumbWire3Caption} />
     </div>
   )
@@ -170,6 +212,34 @@ const ClientThemeThumbs = (props) => {
   )
 }
 
+
+const WidgetThumbs = (props) => {
+
+  const thumbWire1Caption = `Sed quis diam quis quam pellentesque rutrum ornare mattis ante. 
+  Quisque ac urna tincidunt, vulputate metus ut, feugiat nunc.`
+
+  const thumbWire2Caption = `Sed quis diam quis quam pellentesque rutrum ornare mattis ante. 
+  Quisque ac urna tincidunt, vulputate metus ut, feugiat nunc.`
+
+  const thumbWire3Caption = `Sed quis diam quis quam pellentesque rutrum ornare mattis ante. 
+  Quisque ac urna tincidunt, vulputate metus ut, feugiat nunc.`
+
+
+  return (
+    <div className='flex flex-col md:flex-row lg:flex-row'>
+      <ThumbInfo
+          thumb={thumbWidgetHeader}
+          caption={thumbWire1Caption} />
+      <ThumbInfo
+          thumb={thumbWidgetFooter}
+          caption={thumbWire2Caption} />
+      <ThumbInfo
+          thumb={thumbWidgetNone}
+          caption={thumbWire3Caption} />
+    </div>
+  )
+}
+
 const SectionBorder = () => {
   return (
     <div className='border-b py-8 mx-8 md:mx-24 lg:mx-24 border-gray-400' />
@@ -193,24 +263,14 @@ export default function ClientLanding(props){
   suscipit faucibus. Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit 
   varius ac ut risus. Aliquam erat volutpat. Vivamus elementum vestibulum ligula.`
   
-  // const  match = useRouteMatch()
   let { path, url } = useRouteMatch();
 
-  // let { topicId } = useParams()
 
   const overviewLink = (<div><Link to={`/planfu`}><h1>Overview</h1></Link></div>)
   const productLink = (<div><Link to={`/planfu/product`}><h1>Product</h1></Link></div>)
-  // console.log('path: ', path)
-  // console.log('url: ', url)
-
-  // console.log('topocId: ' , topicId)
 
   return (
     <div className='text-lg'>
-      {/* <Hero
-        copy='Athlinks is owned by Life Time Fitness along with Chronotrack providing 
-        race registration, timing and scoring, and race results for endurance athletic events 
-        including the New York Marathon and Spartan events.'/> */}
         {overviewLink}
         {productLink}
       <Synopsis
@@ -226,7 +286,7 @@ export default function ClientLanding(props){
           img={bladeWidgetSrvc}
           imgShadow={true }
           title='Customer Expereince Journey Mapping'
-          titleColor='athlinks-blue'
+          titleColor='planfu-orange'
           copyLeft={true}
           copy={athlinksCopy}/>
         <Blade
@@ -234,13 +294,18 @@ export default function ClientLanding(props){
           img={bladeWidgetDate}
           imgShadow={true}
           title='Onsite - Building Empathy for the Human'
-          titleColor='athlinks-blue'
+          titleColor='planfu-orange'
           copyLeft={false}
           copy={athlinksCopy}>
-            <ClientWireThumbs title='Hello There This is a title'/>
-            <SectionBorder/>
         </Blade>
+        <SectionBorder/>
 
+        <SectionTitleBlock sectionTitle='Wireframed and Tested'/>
+        <ClientWireThumbsRow1 title='Hello There This is a title'/>
+        <ClientWireThumbsRow2 title='Hello There This is a title'/>
+        <SectionBorder/>
+
+        <SectionTitleBlock sectionTitle='Visual Designs for the Client Experience'/>
         <BladeLarge
           img={bladeClientServices}
           copy={athlinksCopy}/>
@@ -251,6 +316,10 @@ export default function ClientLanding(props){
           <ClientThemeThumbs/>
         </BladeLarge>
 
+        <SectionBorder/>
+
+        <SectionTitleBlock sectionTitle='Mobile Scaling'/>
+
         <BladeMobileServiceColumns/>
         <BladeMobileSchedColumns/>
 
@@ -260,7 +329,7 @@ export default function ClientLanding(props){
           img={bladeAdminLanding}
           imgShadow={true }
           title='Customer Expereince Journey Mapping'
-          titleColor='athlinks-blue'
+          titleColor='planfu-orange'
           copyLeft={true}
           copy={athlinksCopy}/>
         <Blade
@@ -268,16 +337,18 @@ export default function ClientLanding(props){
           img={bladeAdminWidget}
           imgShadow={true}
           title='Onsite - Building Empathy for the Human'
-          titleColor='athlinks-blue'
+          titleColor='planfu-orange'
           copyLeft={false}
-          copy={athlinksCopy}/>
+          copy={athlinksCopy}>
+            <WidgetThumbs/>
+        </Blade>
         <Blade
           sectionTitle='Defining the Problem'
           red={false}
           img={bladeAdminThemes}
           imgShadow={true }
           title='Customer Expereince Journey Mapping'
-          titleColor='athlinks-blue'
+          titleColor='planfu-orange'
           copyLeft={true}
           copy={athlinksCopy}/>
       </div>
