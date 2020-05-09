@@ -123,9 +123,15 @@ const BladeMobileSchedColumns = () => {
 
 const SectionTitleBlock = (props) => {
   const sectionTitle = props.sectionTitle ?? ''
+  const copy = props.copy ?? ''
   return (
-    <div className='text-3xl font-semibold text-left ml-8 mt-24'>
-      <h3>{sectionTitle}</h3>
+    <div className='ml-8 lg:ml-12 text-left'>
+      <div className='text-3xl font-semibold text-left mt-24'>
+        <h3>{sectionTitle}</h3>
+      </div>
+      <div className='mt-12'>
+        {copy}
+      </div>
     </div>
   )
 }
@@ -254,14 +260,37 @@ export default function ClientLanding(props){
   suscipit faucibus. Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit 
   varius ac ut risus. Aliquam erat volutpat. Vivamus elementum vestibulum ligula.`
 
-  const challenge = `Timers use our hardware to time athletic events, but they may use 
-  different scoring platforms to push results to. How do we ensure Athlinks members 
-  can rely on Athlinks for all of their race results in one place?`
+  const challenge = `Provide a way for health and wellness professionals without 
+  sufficient websites or mobile apps the ability to let their clients schedule online.`
 
-  const background = `In at libero varius, rutrum leo eu, eleifend purus. Etiam 
-  vulputate fringilla neque sit amet gravida. Vestibulum id turpis vestibulum felis 
-  suscipit faucibus. Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit 
-  varius ac ut risus. Aliquam erat volutpat. Vivamus elementum vestibulum ligula.`
+  const background = `Before we had all the bells and whistles, we developed a simple 
+  reverse scheduling widget that could be installed onto our customers’ websites, 
+  the Schedule Now Widget. This widget allows for their clients to view their availability 
+  and request appointments. After fulfilling expanding the feature set for managing your 
+  business, we decided to revisit the Schedule Now Widget.`
+
+  const defineTheProbCopy = (
+    <div>
+      <p>Feedback has been consistent with the primary themes being, customers do not have 
+        websites that can be customized by adding a widget; customers do not have the expertise 
+        to add the widget to their websites; customers wanted to change the colors of the widget.  </p>
+      {/* <br/>
+      <p>While they had unmet needs of bringing their scheduling to an online platform, these 
+        professionals felt that they were paying too much for features they never used. </p> */}
+    </div>
+  )
+
+  const scalingInsufficiencies = (
+    <div>
+      <p>When our customers wanted to resize to better fit the layout of their website, we exposed 
+        a custom parameter to the widget where they could set the width and height within the script 
+        tag of the widget. </p>
+      <br/>
+      <p>We needed to rethink the widget to be scalable and responsive on every device and within the bounds 
+        of the customer’s website parent container without the customer having to add any parameters to 
+        their widget. We just wanted it to work.</p>
+    </div>
+  )
   
   let { path, url } = useRouteMatch();
 
@@ -275,9 +304,9 @@ export default function ClientLanding(props){
         {productLink}
       <Synopsis
         title='Client Landing Pages'
-        target='Athletes and Race Directors'
+        target='Health, Wellness, & Fitness Professionals'
         challenge={challenge}
-        role='Director, facilitaor, researcher, usability tester'
+        role='R&D, Designer, Front-End Developer, BizDev'
         background={background}/>
       <div className='container mx-auto'>
         <Blade
@@ -285,27 +314,30 @@ export default function ClientLanding(props){
           red={false}
           img={bladeWidgetSrvc}
           imgShadow={true }
-          title='Customer Expereince Journey Mapping'
+          title='Schedule Now Widget Feedback Themes'
           titleColor='planfu-orange'
           copyLeft={true}
-          copy={athlinksCopy}/>
+          copy={defineTheProbCopy}/>
         <Blade
           red={false}
           img={bladeWidgetDate}
           imgShadow={true}
-          title='Onsite - Building Empathy for the Human'
+          title='Scaling Insufficiencies'
           titleColor='planfu-orange'
           copyLeft={false}
-          copy={athlinksCopy}>
+          copy={scalingInsufficiencies}>
         </Blade>
         <SectionBorder/>
 
-        <SectionTitleBlock sectionTitle='Wireframed and Tested'/>
+        <SectionTitleBlock
+          sectionTitle='Wireframed and Tested'
+          copy={athlinksCopy}/>
         <ClientWireThumbsRow1 title='Hello There This is a title'/>
         <ClientWireThumbsRow2 title='Hello There This is a title'/>
         <SectionBorder/>
 
-        <SectionTitleBlock sectionTitle='Visual Designs for the Client Experience'/>
+        <SectionTitleBlock
+          sectionTitle='Visual Designs for the Client Experience'/>
         <BladeLarge
           img={bladeClientServices}
           copy={athlinksCopy}/>
@@ -318,7 +350,8 @@ export default function ClientLanding(props){
 
         <SectionBorder/>
 
-        <SectionTitleBlock sectionTitle='Mobile Scaling'/>
+        <SectionTitleBlock
+          sectionTitle='Mobile Scaling'/>
 
         <BladeMobileServiceColumns/>
         <BladeMobileSchedColumns/>
