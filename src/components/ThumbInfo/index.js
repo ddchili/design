@@ -17,7 +17,7 @@ export default function ThumbInfo(props) {
           <img className='rounded-sm' src={thumb}/>
         </div>
         <div>
-          <p className='text-sm mt-2'>{caption}</p>
+          <p className='text-sm mt-4 mx-2'>{caption}</p>
         </div>
       </div>
     </div>

@@ -53,34 +53,28 @@ import './styles.scss'
 
 const BladeMobileServiceColumns = () => {
 
-  const athlinksCopy = `In at libero varius, rutrum leo eu, eleifend purus. Etiam 
-  vulputate fringilla neque sit amet gravida. Vestibulum id turpis vestibulum felis 
-  suscipit faucibus. Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit 
-  varius ac ut risus. Aliquam erat volutpat. Vivamus elementum vestibulum ligula.`
+  const clientHomeCopy = `Clear messaging, contrast and familiarity with their practitioner was 
+  important to the client to build trust from the start of the scheduling experience. `
 
-  
+  const servicesCopy = `Clients were more prone to wanting to understand the cost options along 
+  with the service and the service times available. We developed a simple price/duration spinner 
+  to reduce the number of screens.`
 
   return (
     <div className='flex flex-col lg:flex-row'>
       <BladeColumn
-        sectionTitle='Athlete Race Pages'
-        red={false}
         img={bladeClientHome}
         imgShadow={false}
-        title='Design Evolution'
+        title='Empowering the Client with Confidence'
         titleColor='planfu-orange'
-        copyLeft={true}
-        copy={athlinksCopy}>
+        copy={clientHomeCopy}>
       </BladeColumn>
       <BladeColumn
-        sectionTitle='Athlete Race Pages'
-        red={false}
         img={bladeClientServicesMobile}
         imgShadow={false}
-        title='Design Evolution'
+        title='Options with the Required Data Upfront'
         titleColor='planfu-orange'
-        copyLeft={true}
-        copy={athlinksCopy}>
+        copy={servicesCopy}>
       </BladeColumn>
     </div>
   )
@@ -88,34 +82,28 @@ const BladeMobileServiceColumns = () => {
 
 const BladeMobileSchedColumns = () => {
 
-  const athlinksCopy = `In at libero varius, rutrum leo eu, eleifend purus. Etiam 
-  vulputate fringilla neque sit amet gravida. Vestibulum id turpis vestibulum felis 
-  suscipit faucibus. Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit 
-  varius ac ut risus. Aliquam erat volutpat. Vivamus elementum vestibulum ligula.`
+  const schedCopy = `Slider affordances on mobile for selecting dates when the date is in 
+  the near term future required the least amount of user interaction.`
 
-  
+  const notesCopy = `In our experimentation, we introduced the Appointment Needs with a 
+  description to auto-populate the appointment notes for the practitioner to view before they 
+  confirm the appointment. `
 
   return (
     <div className='flex flex-col lg:flex-row'>
       <BladeColumn
-        sectionTitle='Athlete Race Pages'
-        red={false}
         img={bladeClientSchedMobile}
         imgShadow={false}
-        title='Design Evolution'
+        title='Progressive Disclosure for Availability'
         titleColor='planfu-orange'
-        copyLeft={true}
-        copy={athlinksCopy}>
+        copy={schedCopy}>
       </BladeColumn>
       <BladeColumn
-        sectionTitle='Athlete Race Pages'
-        red={false}
         img={bladeClientFormMobile}
         imgShadow={false}
-        title='Design Evolution'
+        title='Notes Automation'
         titleColor='planfu-orange'
-        copyLeft={true}
-        copy={athlinksCopy}>
+        copy={notesCopy}>
       </BladeColumn>
     </div>
   )
@@ -139,14 +127,12 @@ const SectionTitleBlock = (props) => {
 
 const ClientWireThumbsRow1 = (props) => {
 
-  const thumbWire1Caption = `Sed quis diam quis quam pellentesque rutrum ornare mattis ante. 
-  Quisque ac urna tincidunt, vulputate metus ut, feugiat nunc.`
+  const thumbWire1Caption = `The service offering along with pricing upfront was the most 
+  appealing to our customers and their clients. `
 
-  const thumbWire2Caption = `Sed quis diam quis quam pellentesque rutrum ornare mattis ante. 
-  Quisque ac urna tincidunt, vulputate metus ut, feugiat nunc.`
+  const thumbWire2Caption = `Displaying in a grid format assisted in better responsive scaling.`
 
-  const thumbWire3Caption = `Sed quis diam quis quam pellentesque rutrum ornare mattis ante. 
-  Quisque ac urna tincidunt, vulputate metus ut, feugiat nunc.`
+  const thumbWire3Caption = `Header information to showcase their business as a themeable element.`
 
 
   return (
@@ -166,14 +152,14 @@ const ClientWireThumbsRow1 = (props) => {
 
 const ClientWireThumbsRow2 = (props) => {
 
-  const thumbWire1Caption = `Sed quis diam quis quam pellentesque rutrum ornare mattis ante. 
-  Quisque ac urna tincidunt, vulputate metus ut, feugiat nunc.`
+  const thumbWire1Caption = `Minimizing the weight of the header balanced out with the average 
+  number of services to be listed below.`
 
-  const thumbWire2Caption = `Sed quis diam quis quam pellentesque rutrum ornare mattis ante. 
-  Quisque ac urna tincidunt, vulputate metus ut, feugiat nunc.`
+  const thumbWire2Caption = `Swipeable date selection for mobile and desktop would progressively 
+  disclose the availability  for a client.`
 
-  const thumbWire3Caption = `Sed quis diam quis quam pellentesque rutrum ornare mattis ante. 
-  Quisque ac urna tincidunt, vulputate metus ut, feugiat nunc.`
+  const thumbWire3Caption = `Clear receipt-like checkout format was a solid convention that resonated 
+  with our audience. `
 
 
   return (
@@ -193,27 +179,25 @@ const ClientWireThumbsRow2 = (props) => {
 
 const ClientThemeThumbs = (props) => {
 
-  const thumbWire1Caption = `Sed quis diam quis quam pellentesque rutrum ornare mattis ante. 
-  Quisque ac urna tincidunt, vulputate metus ut, feugiat nunc.`
+  const visClientThumb1 = `Predefined layouts with themeable options by matching visual language colors with raster 
+  images for a unified experience.`
 
-  const thumbWire2Caption = `Sed quis diam quis quam pellentesque rutrum ornare mattis ante. 
-  Quisque ac urna tincidunt, vulputate metus ut, feugiat nunc.`
+  const visClientThumb2 = `Themes could be customized through the customer’s administration experience within Planfu. `
 
-  const thumbWire3Caption = `Sed quis diam quis quam pellentesque rutrum ornare mattis ante. 
-  Quisque ac urna tincidunt, vulputate metus ut, feugiat nunc.`
-
+  const visClientThumb3 = `Users are able to select from 6 predefined themes to customize the scheduling experience 
+  for their clients.`
 
   return (
     <div className='flex flex-col md:flex-row lg:flex-row'>
       <ThumbInfo
           thumb={thumbServiceCrimson}
-          caption={thumbWire1Caption} />
+          caption={visClientThumb1} />
       <ThumbInfo
           thumb={thumbSchedForrest}
-          caption={thumbWire2Caption} />
+          caption={visClientThumb2} />
       <ThumbInfo
           thumb={thumbFormYellow}
-          caption={thumbWire3Caption} />
+          caption={visClientThumb3} />
     </div>
   )
 }
@@ -221,14 +205,14 @@ const ClientThemeThumbs = (props) => {
 
 const WidgetThumbs = (props) => {
 
-  const thumbWire1Caption = `Sed quis diam quis quam pellentesque rutrum ornare mattis ante. 
-  Quisque ac urna tincidunt, vulputate metus ut, feugiat nunc.`
+  const thumbWire1Caption = `With the header and without the footer for users that wanted the business information 
+  available on top of the scheduling system.`
 
-  const thumbWire2Caption = `Sed quis diam quis quam pellentesque rutrum ornare mattis ante. 
-  Quisque ac urna tincidunt, vulputate metus ut, feugiat nunc.`
+  const thumbWire2Caption = `With the footer and without the header for the business information to be displayed at 
+  the bottom.`
 
-  const thumbWire3Caption = `Sed quis diam quis quam pellentesque rutrum ornare mattis ante. 
-  Quisque ac urna tincidunt, vulputate metus ut, feugiat nunc.`
+  const thumbWire3Caption = `No header and no footer was the final option based on some of our customer’s feedback 
+  where the information was redundant to what they already had on their website.`
 
 
   return (
@@ -255,10 +239,9 @@ const SectionBorder = () => {
 
 export default function ClientLanding(props){
 
-  const athlinksCopy = `In at libero varius, rutrum leo eu, eleifend purus. Etiam 
-  vulputate fringilla neque sit amet gravida. Vestibulum id turpis vestibulum felis 
-  suscipit faucibus. Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit 
-  varius ac ut risus. Aliquam erat volutpat. Vivamus elementum vestibulum ligula.`
+  const athlinksCopy = `Nam feugiat purus a eros commodo, sed facilisis sem vehicula. Pellentesque tincidunt 
+  orci sed dui rhoncus, eu finibus est commodo. Suspendisse maximus, nisl sed rhoncus mattis, ligula justo 
+  hendrerit lorem, non tristique elit arcu ut diam. `
 
   const challenge = `Provide a way for health and wellness professionals without 
   sufficient websites or mobile apps the ability to let their clients schedule online.`
@@ -268,6 +251,16 @@ export default function ClientLanding(props){
   the Schedule Now Widget. This widget allows for their clients to view their availability 
   and request appointments. After fulfilling expanding the feature set for managing your 
   business, we decided to revisit the Schedule Now Widget.`
+
+  const wireframedtestedCopy = `As a side project in developing Planfu during the evenings and weekends, 
+  I’ve learned to embrace usability studies on a shoestring budget. `
+
+  const resonsiveLayoutsCopy = `Asking the client to do the scheduling work comes inherently with a cognitive 
+  load that is unfamiliar. In the testing process, we found success with conventional designs and minimal 
+  steps in the process.`
+
+  const whitespaceCopy = `Clear and unobstructed display of the actions for the user was key to the visual design. 
+  Whitespace afforded the user of progressively disclosing selectable elements in the layout. `
 
   const defineTheProbCopy = (
     <div>
@@ -292,6 +285,32 @@ export default function ClientLanding(props){
     </div>
   )
   
+  const clientPageAdminCopy = (
+    <div>
+      <p>A large number of customers were lacking a sufficient way to add the Schedule Now widget to their website, 
+        or customers without a website. </p>
+      <br/>
+      <p>We developed a one button click deployment of their website with scheduling integrated. </p>
+    </div>
+  )
+
+  const siteIntegrationCopy = (
+    <div>
+      <p>To best compliment the practitioner's website, we offered 3 options for the layout of the embeddable widget. </p>
+      <br/>
+      <p>Offering a preview with the selected option displayed with scaling behavior so the user would be confident 
+        that the widget would fit their website. </p>
+    </div>
+  )
+
+  const themeCopy = (
+    <div>
+      <p>Users could easily select a theme and preview the effects on their website. </p>
+      <br/>
+      <p>The theme would be applied to both theor Schedule Now widget and the Client Landing Page. </p>
+    </div>
+  )
+
   let { path, url } = useRouteMatch();
 
 
@@ -330,8 +349,8 @@ export default function ClientLanding(props){
         <SectionBorder/>
 
         <SectionTitleBlock
-          sectionTitle='Wireframed and Tested'
-          copy={athlinksCopy}/>
+          sectionTitle='Wireframes and Testing Iterations'
+          copy={wireframedtestedCopy}/>
         <ClientWireThumbsRow1 title='Hello There This is a title'/>
         <ClientWireThumbsRow2 title='Hello There This is a title'/>
         <SectionBorder/>
@@ -339,51 +358,52 @@ export default function ClientLanding(props){
         <SectionTitleBlock
           sectionTitle='Visual Designs for the Client Experience'/>
         <BladeLarge
+          titleColor='planfu-orange'
+          title='Responsive Themeable Layouts'
           img={bladeClientServices}
-          copy={athlinksCopy}/>
+          copy={resonsiveLayoutsCopy}/>
 
         <BladeLarge
           img={bladeClientSchedLg}
-          copy={athlinksCopy}>
+          titleColor='planfu-orange'
+          title='Whitespace Usage'
+          copy={whitespaceCopy}>
           <ClientThemeThumbs/>
         </BladeLarge>
 
         <SectionBorder/>
 
         <SectionTitleBlock
-          sectionTitle='Mobile Scaling'/>
-
+          sectionTitle='Mobile as the Primary Scale for Clients'/>
         <BladeMobileServiceColumns/>
         <BladeMobileSchedColumns/>
 
         <Blade
-          sectionTitle='Defining the Problem'
+          sectionTitle='Administering the Client Experience'
           red={false}
           img={bladeAdminLanding}
           imgShadow={true }
-          title='Customer Expereince Journey Mapping'
+          title='Client Landing Pages'
           titleColor='planfu-orange'
           copyLeft={true}
-          copy={athlinksCopy}/>
+          copy={clientPageAdminCopy}/>
         <Blade
           red={false}
           img={bladeAdminWidget}
           imgShadow={true}
-          title='Onsite - Building Empathy for the Human'
+          title='Website Integrations'
           titleColor='planfu-orange'
           copyLeft={false}
-          copy={athlinksCopy}>
+          copy={siteIntegrationCopy}>
             <WidgetThumbs/>
         </Blade>
         <Blade
-          sectionTitle='Defining the Problem'
-          red={false}
           img={bladeAdminThemes}
           imgShadow={true }
-          title='Customer Expereince Journey Mapping'
+          title='Themable Sections'
           titleColor='planfu-orange'
           copyLeft={true}
-          copy={athlinksCopy}/>
+          copy={themeCopy}/>
       </div>
     </div>
   )
