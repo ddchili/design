@@ -113,7 +113,7 @@ const SectionTitleBlock = (props) => {
   const sectionTitle = props.sectionTitle ?? ''
   const copy = props.copy ?? ''
   return (
-    <div className='ml-8 lg:ml-12 text-left'>
+    <div className='ml-8 text-left'>
       <div className='text-3xl font-semibold text-left mt-24'>
         <h3>{sectionTitle}</h3>
       </div>
