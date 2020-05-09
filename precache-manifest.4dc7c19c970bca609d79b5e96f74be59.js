@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "df9456ca4941abac49dd579159f74146",
+    "revision": "e15155ac2717368b66384d276bbd6cce",
     "url": "/design/index.html"
   },
   {
-    "revision": "de1521f3d2f109d4ca09",
+    "revision": "740a47fc93490234fc3a",
     "url": "/design/static/css/main.8aa41657.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/design/static/js/2.259fd4d7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "de1521f3d2f109d4ca09",
-    "url": "/design/static/js/main.bb5c1434.chunk.js"
+    "revision": "740a47fc93490234fc3a",
+    "url": "/design/static/js/main.2ecb15ab.chunk.js"
   },
   {
     "revision": "c816f079b869400abc0f",
@@ -236,12 +236,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/design/static/media/planfu_thumb_client_serviceCrimson.1b6fee02.jpg"
   },
   {
-    "revision": "45f3e5a3887546a1b8b14e377b294900",
-    "url": "/design/static/media/planfu_thumb_client_wire1.45f3e5a3.jpg"
+    "revision": "6ac21d5b4e2f9ec167a531ae71dcc8e4",
+    "url": "/design/static/media/planfu_thumb_client_wire1.6ac21d5b.jpg"
   },
   {
-    "revision": "3fd7db4a0d1a81726a1f2df511449c3a",
-    "url": "/design/static/media/planfu_thumb_client_wire2.3fd7db4a.jpg"
+    "revision": "0b83c7f6f744f008f407fb3f38fe46fa",
+    "url": "/design/static/media/planfu_thumb_client_wire2.0b83c7f6.jpg"
   },
   {
     "revision": "02daa346e96fb2ea48c81b5a37ec1c34",
