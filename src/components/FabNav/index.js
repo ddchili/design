@@ -26,6 +26,9 @@ import { Link } from 'react-router-dom'
 import './styles.scss'
 
 const useStyles = makeStyles({
+  '& .makeStyles-root-1 > *': {
+    right: 100,
+  },
   list: {
     width: 250,
     height: '100vh'
@@ -161,7 +164,7 @@ export default function FabNav() {
         <React.Fragment key={anchor}>
           {/* <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button> */}
           {/* <Hidden smUp> */}
-            <Fab 
+            <Fab style={{right:'36px', bottom:'36px'}}
               classes={classes.fab}
               color='primary'
               aria-label='navigation'
