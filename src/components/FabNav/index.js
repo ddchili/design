@@ -107,9 +107,9 @@ export default function FabNav() {
   const AthlinksLink = React.forwardRef((props, ref) => <Link to={'/athlinks'} {...props} ref={ref} />)
   const PlanfuLink = React.forwardRef((props, ref) => <Link to={'/planfu'} {...props} ref={ref} />)
   const PlayLink = React.forwardRef((props, ref) => <Link to={'/play'} {...props}  ref={ref} />)
-  const ContactLink = React.forwardRef((props, ref) => <Link to={'/contact'} {...props} ref={ref} />)
+  const AboutLink = React.forwardRef((props, ref) => <Link to={'/about'} {...props} ref={ref} />)
 
-  const links = [HomeLink, AthlinksLink, PlanfuLink, PlayLink, ContactLink]
+  const links = [HomeLink, AthlinksLink, PlanfuLink, AboutLink]
 
   const list = (anchor) => (
 
@@ -122,7 +122,7 @@ export default function FabNav() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Home', 'Athlinks', 'Planfu', 'Play', 'Conatct'].map((text, index) => (
+        {['Home', 'Athlinks', 'Planfu', 'About'].map((text, index) => (
           <ListItem
             button key={text}
             component={links[index]}
@@ -134,7 +134,7 @@ export default function FabNav() {
             {/* {text==='Athlinks' ? open ? <ExpandLess /> : <ExpandMore /> : ''} */}
           </ListItem>
           ))}
-            <Collapse in={open} timeout="auto" unmountOnExit>
+            {/* <Collapse in={open} timeout="auto" unmountOnExit>
               <List component="div" disablePadding>
                 <ListItem button>
                   <ListItemIcon>
@@ -144,7 +144,7 @@ export default function FabNav() {
                 </ListItem>
               </List>
             </Collapse> 
-  
+   */}
         </List>
       <Divider />
       {/* <List>

@@ -73,11 +73,11 @@ function App(props) {
                 <Route path={ '/athlinks/event' }>
                   <CreateEvent />
                 </Route>
-                <Route path={ '/play' }>
-                  <Play />
-                </Route>
                 <Route path={ '/about' }>
                   <About />
+                </Route>
+                <Route path={ '/files' }>
+                  <Files />
                 </Route>
                 <Route path={ '/' }>
                   <Home />
@@ -169,13 +169,14 @@ function Planfu() {
   ) 
 }
 
-// function Planfu() {
-//   return (
-//     <div>
-//       <PlanfuView/>
-//     </div>
-//   )
-// }
+function Files() {
+  return (
+    <div>
+      {/* <Files/> */}
+      files
+    </div>
+  )
+}
 
 function CreateEvent() {
   return (
@@ -183,15 +184,6 @@ function CreateEvent() {
       <CreateEventView/>
     </div>
   ) 
-}
-
-function Play() {
-  return (
-    <div>
-      <PlayView/>
-      <h2>Play</h2>
-    </div>
-  )
 }
 
 function About() {

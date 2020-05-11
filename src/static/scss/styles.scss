@@ -14,6 +14,12 @@ body{
   color: $demmer-red;
 }
 
+.demmer-red-h2 {
+  h2{
+    color: $demmer-red;
+  }
+}
+
 .background-red {
   background: $light-red;
 }
