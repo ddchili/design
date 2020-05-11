@@ -18,6 +18,7 @@ import screenAthlinks from '../../static/img/raster/blade_athlinks.jpg'
 import screenPlanfu from '../../static/img/raster/blade_planfu.jpg'
 import screenReadyTalk from '../../static/img/raster/blade_readyTalk.jpg'
 import screenMmf from '../../static/img/raster/blade_mmf.jpg'
+import screenRally from '../../static/img/raster/blade_rally.jpg'
 
 import './styles.scss'
 
@@ -64,6 +65,7 @@ const Blade = (props)=> {
   const copy = props.copy ? props.copy : 'no copy supplied'
   const route = props.route ?? '/'
   const view = props.view ?? ''
+  const btnTitle = props.btnTitle ?? 'View Projects'
 
   const { path, url } = useRouteMatch()
 
@@ -82,7 +84,7 @@ if(isMobile){
             <p>{copy}</p>
             <Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 self-center w-4/5 py-2 px-4 my-8 rounded-full 
               text-center text-base tracking-wide text-white font-bold uppercase'>
-                View Projects
+                {btnTitle}
             </Link>
           </div>
         </div>
@@ -99,7 +101,7 @@ if(isMobile){
               <p>{copy}</p>
               <Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 self-center w-4/5 py-2 px-4 my-8 rounded-full 
                 text-center text-base tracking-wide text-white font-bold uppercase'>
-                  View Projects
+                  {btnTitle}
               </Link>
             </div>
             <div className='shadow-lg self-center m-8 blade-screen'>
@@ -122,7 +124,7 @@ if(isMobile){
                 <p>{copy}</p>
                 <Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 self-center w-4/5 py-2 px-4 my-8 rounded-full 
                 text-center text-base tracking-wide text-white font-bold uppercase'>
-                  View Projects
+                  {btnTitle}
               </Link>
               </div>
             </div>
@@ -188,21 +190,24 @@ export default function HomeView(props){
         title='ReadyTalk'
         titleColor='readytalk-green'
         copyLeft={true}
-        copy={readyTalkCopy}/>
+        copy={readyTalkCopy}
+        btnTitle='Comming Soon'/>
       <Blade
         red={false}
         img={screenMmf}
         title='MapMyFitness'
         titleColor='mmf-blue'
         copyLeft={false}
-        copy={mmfCopy}/>
+        copy={mmfCopy}
+        btnTitle='Comming Soon'/>
       <Blade
         red={true}
-        img={screenMmf}
+        img={screenRally}
         title='Rally'
         titleColor='rally-red'
         copyLeft={true}
-        copy={rallyCopy}/>
+        copy={rallyCopy}
+        btnTitle='Comming Soon'/>
     </div>
   )
 }

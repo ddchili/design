@@ -164,7 +164,7 @@ export default function FabNav() {
         <React.Fragment key={anchor}>
           {/* <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button> */}
           {/* <Hidden smUp> */}
-            <Fab style={{right:'36px', bottom:'36px'}}
+            <Fab style={{right:'24px', bottom:'24px'}}
               classes={classes.fab}
               color='primary'
               aria-label='navigation'
