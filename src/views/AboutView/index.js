@@ -22,6 +22,7 @@ import { isMobile } from 'react-device-detect'
 import bladeCXLead from '../../static/img/raster/about_cxLead.jpg'
 import bladeAthlinksUXTeam from '../../static/img/raster/about_athlinks_uxTeam.jpg'
 import bladeLeadvilleTrailFriends from '../../static/img/raster/about_leadvillTrail_friends.jpg'
+import bladeLT100RaceCrew from '../../static/img/raster/about_lt100_raceCrew.jpg'
 import bladeColfax from '../../static/img/raster/about_colfax.jpg'
 import thumbMiamiSelfie from '../../static/img/raster/about_miami_finishSelfie.jpg'
 import thumbHopePass from '../../static/img/raster/about_dd_hopePass.jpg'
@@ -235,6 +236,15 @@ export default function AboutView(props){
             copyLeft={false}
             copy={scalingInsufficiencies}>
           </Blade>
+          <Blade
+            sectionTitle='Leadville Trail 100 Race Crew'
+            red={false}
+            img={bladeLT100RaceCrew}
+            imgShadow={true }
+            title='Multi-Faceted Approach'
+            titleColor='demmer-red-h2'
+            copyLeft={true}
+            copy={defineTheProbCopy}/>
           <FieldResearchThumbs/>
           <SectionBorder/>
 
