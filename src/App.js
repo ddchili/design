@@ -188,10 +188,7 @@ function CreateEvent() {
 
 function About() {
   return (
-    <div>
-      <AboutView/>
-      <h2>About</h2>
-    </div>
+    <AboutView/>
   )
 }
 

@@ -55,6 +55,7 @@ export default function Blade(props) {
     return (
       <Fade bottom duration={500}>
         <div className={`${titleColor} mb-8`}>
+          {sectionTitle ? sectionTitleBlock : null}
           <div className='flex flex-col md:flex-col lg:flex-row justify-center text-left h-full'>
             <div className={`${imgShadow ? 'shadow-lg' : ''} self-center m-8`}>
               <img className='rounded-md' src={img}/>
