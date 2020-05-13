@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/design/static/css/main.7ca6768e.chunk.css",
-    "main.js": "/design/static/js/main.3db2a351.chunk.js",
-    "main.js.map": "/design/static/js/main.3db2a351.chunk.js.map",
+    "main.js": "/design/static/js/main.bc915b3f.chunk.js",
+    "main.js.map": "/design/static/js/main.bc915b3f.chunk.js.map",
     "runtime-main.js": "/design/static/js/runtime-main.0d9b6d83.js",
     "runtime-main.js.map": "/design/static/js/runtime-main.0d9b6d83.js.map",
-    "static/js/2.fcdf589e.chunk.js": "/design/static/js/2.fcdf589e.chunk.js",
-    "static/js/2.fcdf589e.chunk.js.map": "/design/static/js/2.fcdf589e.chunk.js.map",
+    "static/js/2.f7014831.chunk.js": "/design/static/js/2.f7014831.chunk.js",
+    "static/js/2.f7014831.chunk.js.map": "/design/static/js/2.f7014831.chunk.js.map",
     "index.html": "/design/index.html",
-    "precache-manifest.38311134cd8f3b8343a0b4344159fa23.js": "/design/precache-manifest.38311134cd8f3b8343a0b4344159fa23.js",
+    "precache-manifest.6b11e3197586ca5e2f1269bed59e49a4.js": "/design/precache-manifest.6b11e3197586ca5e2f1269bed59e49a4.js",
     "service-worker.js": "/design/service-worker.js",
     "static/css/main.7ca6768e.chunk.css.map": "/design/static/css/main.7ca6768e.chunk.css.map",
-    "static/js/2.fcdf589e.chunk.js.LICENSE.txt": "/design/static/js/2.fcdf589e.chunk.js.LICENSE.txt",
+    "static/js/2.f7014831.chunk.js.LICENSE.txt": "/design/static/js/2.f7014831.chunk.js.LICENSE.txt",
     "static/media/about_athlinks_uxTeam.jpg": "/design/static/media/about_athlinks_uxTeam.58c73340.jpg",
+    "static/media/about_blade_engineer.jpg": "/design/static/media/about_blade_engineer.32d5e1bb.jpg",
     "static/media/about_colfax.jpg": "/design/static/media/about_colfax.da76d316.jpg",
     "static/media/about_cxLead.jpg": "/design/static/media/about_cxLead.ec7f74c5.jpg",
     "static/media/about_dd_hopePass.jpg": "/design/static/media/about_dd_hopePass.c0f0f6d0.jpg",
@@ -21,9 +22,15 @@
     "static/media/about_lt100Crew.jpg": "/design/static/media/about_lt100Crew.e1b30164.jpg",
     "static/media/about_lt100_raceCrew.jpg": "/design/static/media/about_lt100_raceCrew.9340d168.jpg",
     "static/media/about_miami_finishSelfie.jpg": "/design/static/media/about_miami_finishSelfie.5c154a65.jpg",
+    "static/media/about_thumb_DDBrand.jpg": "/design/static/media/about_thumb_DDBrand.e4a1f710.jpg",
     "static/media/about_thumb_backcountryTrail.jpg": "/design/static/media/about_thumb_backcountryTrail.90c56a18.jpg",
+    "static/media/about_thumb_ddTaxonomy.jpg": "/design/static/media/about_thumb_ddTaxonomy.52a877e2.jpg",
+    "static/media/about_thumb_mui.jpg": "/design/static/media/about_thumb_mui.0bcb4011.jpg",
+    "static/media/about_thumb_react.jpg": "/design/static/media/about_thumb_react.1d5a701f.jpg",
     "static/media/about_thumb_rideRockies.jpg": "/design/static/media/about_thumb_rideRockies.c69f726e.jpg",
     "static/media/about_thumb_shred.jpg": "/design/static/media/about_thumb_shred.8197b0bf.jpg",
+    "static/media/about_thumb_sketchDesign.jpg": "/design/static/media/about_thumb_sketchDesign.9ed3e54b.jpg",
+    "static/media/about_thumb_tailwind.jpg": "/design/static/media/about_thumb_tailwind.801052bd.jpg",
     "static/media/arp_blade_concierge.jpg": "/design/static/media/arp_blade_concierge.caf7abaf.jpg",
     "static/media/arp_blade_post.jpg": "/design/static/media/arp_blade_post.d5197f12.jpg",
     "static/media/arp_blade_pre.jpg": "/design/static/media/arp_blade_pre.305a802e.jpg",
@@ -121,8 +128,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0d9b6d83.js",
-    "static/js/2.fcdf589e.chunk.js",
+    "static/js/2.f7014831.chunk.js",
     "static/css/main.7ca6768e.chunk.css",
-    "static/js/main.3db2a351.chunk.js"
+    "static/js/main.bc915b3f.chunk.js"
   ]
 }
