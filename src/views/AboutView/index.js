@@ -103,12 +103,12 @@ const FieldResearchThumbs = (props) => {
 
 const UXDesignThumbs = (props) => {
 
-  const thumb1Caption = `The service offering along with pricing upfront was the most 
-  appealing to our customers and their clients. `
+  const thumb1Caption = `For my portfolio site, I went through several UX paces of designing and 
+  implementation, including taxonomy, flows and layouts. `
 
-  const thumb2Caption = `Displaying in a grid format assisted in better responsive scaling.`
+  const thumb2Caption = `Refreshing my brand for the sole purpose of my portfolio. `
 
-  const thumb3Caption = `Header information to showcase their business as a themeable element.`
+  const thumb3Caption = `Sketch has been my tool of choice along with many other`
 
 
   return (
@@ -315,10 +315,10 @@ export default function AboutView(props){
     return (
       <div className='flex'>
         <div>
-          <a href='/files/ddemmer_resume_2020.pdf' target='_blank' rel='noopener noreferrer' download><PictureAsPdfOutlinedIcon/>Demmer Resume</a>
+          <a href='/files/ddemmer_resume_2020.pdf' target='_blank' rel='noopener noreferrer' download><PictureAsPdfOutlinedIcon/>Demmer Resume PDF</a>
         </div>
         <div>
-          <a href='/files/ddemmer_resume_2020.docx' target='_blank' rel='noopener noreferrer' download><DescriptionOutlinedIcon/>Demmer Resume</a>
+          <a href='/files/ddemmer_resume_2020.docx' target='_blank' rel='noopener noreferrer' download><DescriptionOutlinedIcon/>Demmer Resume docx</a>
         </div>
       </div>
     )
