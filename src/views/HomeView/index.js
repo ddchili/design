@@ -82,10 +82,10 @@ if(isMobile){
           </div>
           <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/4 m-2 md:m-8 lg:m-8 xl:m-8'>
             <p>{copy}</p>
-            <Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 self-center w-4/5 py-2 px-4 my-8 rounded-full 
+            {btnTitle!=='' ? ( <Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 self-center w-4/5 py-2 px-4 my-8 rounded-full 
               text-center text-base tracking-wide text-white font-bold uppercase'>
                 {btnTitle}
-            </Link>
+            </Link>):''}
           </div>
         </div>
       </Fade>
@@ -99,10 +99,10 @@ if(isMobile){
             <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/4 m-2 md:m-8 lg:m-8 xl:m-8'>
               <h2 className='text-3xl font-semibold'><Link to={`/${view}`}>{title}</Link></h2>
               <p>{copy}</p>
-              <Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 self-center w-4/5 py-2 px-4 my-8 rounded-full 
+              {btnTitle!=='' ? (<Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 self-center w-4/5 py-2 px-4 my-8 rounded-full 
                 text-center text-base tracking-wide text-white font-bold uppercase'>
                   {btnTitle}
-              </Link>
+              </Link>) : '' }
             </div>
             <div className='shadow-lg self-center m-8 blade-screen'>
               <img src={img}/>
@@ -122,10 +122,10 @@ if(isMobile){
               <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/4 m-2 md:m-8 lg:m-8 xl:m-8'>
                 <h2 className='text-3xl font-semibold'><Link to={`/${view}`}>{title}</Link></h2>
                 <p>{copy}</p>
-                <Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 self-center w-4/5 py-2 px-4 my-8 rounded-full 
-                text-center text-base tracking-wide text-white font-bold uppercase'>
+                {btnTitle!=='' ? ( <Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 self-center w-4/5 py-2 px-4 my-8 rounded-full 
+                  text-center text-base tracking-wide text-white font-bold uppercase'>
                   {btnTitle}
-              </Link>
+                </Link>) : ''}
               </div>
             </div>
           </Fade>
@@ -191,7 +191,7 @@ export default function HomeView(props){
         titleColor='readytalk-green'
         copyLeft={true}
         copy={readyTalkCopy}
-        btnTitle='Comming Soon'/>
+        btnTitle=''/>
       <Blade
         red={false}
         img={screenMmf}
@@ -199,7 +199,7 @@ export default function HomeView(props){
         titleColor='mmf-blue'
         copyLeft={false}
         copy={mmfCopy}
-        btnTitle='Comming Soon'/>
+        btnTitle=''/>
       <Blade
         red={true}
         img={screenRally}
@@ -207,7 +207,7 @@ export default function HomeView(props){
         titleColor='rally-red'
         copyLeft={true}
         copy={rallyCopy}
-        btnTitle='Comming Soon'/>
+        btnTitle=''/>
     </div>
   )
 }

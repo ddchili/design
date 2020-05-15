@@ -108,7 +108,7 @@ const UXDesignThumbs = (props) => {
 
   const thumb2Caption = `Refreshing my brand for the sole purpose of my portfolio. `
 
-  const thumb3Caption = `Sketch has been my tool of choice along with many other`
+  const thumb3Caption = `Sketch has been my tool of choice along with many others.`
 
 
   return (
@@ -231,7 +231,7 @@ const CareerHistory = (props) => {
       <div className='w-full text-left mx-auto'>
         <div className='flex flex-row my-4 border-b pb-4 border-gray-400'>
           <span className='font-semibold w-64'>Athlinks - A Life Time Company</span>
-          <p className='w-5/6'>Director of User Experince</p>
+          <p className='w-5/6'>Director of User Experience</p>
         </div>
         <div className='flex flex-row my-4 border-b pb-4 border-gray-400'>
           <span className='font-semibold w-64'>Planfu</span>
@@ -239,7 +239,7 @@ const CareerHistory = (props) => {
         </div>
         <div className='flex flex-row my-4 border-b pb-4 border-gray-400'>
           <span className='font-semibold w-64'>ReadyTalk</span>
-          <p className='w-5/6'>User Experince Designer</p>
+          <p className='w-5/6'>User Experience Designer</p>
         </div>
         <div className='flex flex-row my-4 border-b pb-4 border-gray-400'>
           <span className='font-semibold w-64'>MapMyFitness</span>
@@ -374,41 +374,11 @@ export default function AboutView(props){
             titleColor='demmer-red-h2'
             copyLeft={true}
             copy={uxCopy}/>
-          {/* <Blade
-            red={false}
-            img={bladeAthlinksUXTeam}
-            imgShadow={true}
-            title='Scaling Insufficiencies'
-            titleColor='demmer-red-h2'
-            copyLeft={false}
-            copy={scalingInsufficiencies}>
-          </Blade>
-          <Blade
-            sectionTitle='Leadville Trail 100 Race Crew'
-            red={false}
-            img={bladeLT100RaceCrew}
-            imgShadow={true }
-            title='Multi-Faceted Approach'
-            titleColor='demmer-red-h2'
-            copyLeft={true}
-            copy={defineTheProbCopy}/> */}
+         
           <UXDesignThumbs/>
           <SectionBorder/>
 
-          {/* <ContactDetails
-            target='Health, Wellness, & Fitness Professionals'
-            challenge={challenge}
-            role='R&D, Designer, Front-End Developer, BizDev'/> */}
-
-          {/* <Blade
-            sectionTitle='Defining the Problem'
-            red={false}
-            img={bladeLeadvilleTrailFriends}
-            imgShadow={true }
-            title='Schedule Now Widget Feedback Themes'
-            titleColor='demmer-red-h2'
-            copyLeft={true}
-            copy={defineTheProbCopy}/> */}
+          
           <Blade
             sectionTitle='Engineer'
             red={false}
@@ -429,6 +399,43 @@ export default function AboutView(props){
 
           <CareerHistory
             title='Career History'/>
+
+          <SectionBorder/>
+
+
+          <Blade
+            sectionTitle='Leadville Trail 100 Race Crew'
+            red={false}
+            img={bladeLT100RaceCrew}
+            imgShadow={true }
+            title='Multi-Faceted Approach'
+            titleColor='demmer-red-h2'
+            copyLeft={true}
+            copy={engineeringCopy}/>
+          <FieldResearchThumbs/>  
+
+          <Blade
+            sectionTitle='Defining the Problem'
+            red={false}
+            img={bladeLeadvilleTrailFriends}
+            imgShadow={true }
+            title='Schedule Now Widget Feedback Themes'
+            titleColor='demmer-red-h2'
+            copyLeft={true}
+            copy={engineeringCopy}/>
+
+          <Blade
+            red={false}
+            img={bladeAthlinksUXTeam}
+            imgShadow={true}
+            title='Scaling Insufficiencies'
+            titleColor='demmer-red-h2'
+            copyLeft={false}
+            copy={engineeringCopy}>
+          </Blade>
+          
+          <DDActivities/>
+          
 
         </div>
       </div>
