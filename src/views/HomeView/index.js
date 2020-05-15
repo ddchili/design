@@ -42,11 +42,14 @@ const Hero = (props) => {
               I'm David Demmer.
             </h1>
             <p className='text-gray-700 text-lg'>
-              I create People-Cenetred Design experiences specializing in enterprise and consumer design 
-              for the health, wellness, and fitness space.
+              I create Human-Cenetred Design experiences specializing in enterprise and consumer design 
+              for the health, wellness, and fitness industries.
             </p>
+            <br/>
             <p className='text-gray-700 text-lg'>
-              My portfolio is currently being updated for 2020 but feel free to browse as I'm updating it daily. 
+              Checkout my recent work below and download my 
+                <a href='/files/ddemmer_resume_2020.pdf' target='_blank' 
+                className='demmer-red' rel='noopener noreferrer' download> resume</a>.
             </p>
           </div>
         </div>
@@ -82,7 +85,7 @@ if(isMobile){
           </div>
           <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/4 m-2 md:m-8 lg:m-8 xl:m-8'>
             <p>{copy}</p>
-            {btnTitle!=='' ? ( <Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 self-center w-4/5 py-2 px-4 my-8 rounded-full 
+            {btnTitle!=='' ? ( <Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 self-center w-4/5 md:w-2/3 py-2 px-4 my-8 rounded-full 
               text-center text-base tracking-wide text-white font-bold uppercase'>
                 {btnTitle}
             </Link>):''}
@@ -99,7 +102,7 @@ if(isMobile){
             <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/4 m-2 md:m-8 lg:m-8 xl:m-8'>
               <h2 className='text-3xl font-semibold'><Link to={`/${view}`}>{title}</Link></h2>
               <p>{copy}</p>
-              {btnTitle!=='' ? (<Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 self-center w-4/5 py-2 px-4 my-8 rounded-full 
+              {btnTitle!=='' ? (<Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 self-center w-4/5 md:w-2/3 py-2 px-4 my-8 rounded-full 
                 text-center text-base tracking-wide text-white font-bold uppercase'>
                   {btnTitle}
               </Link>) : '' }
@@ -122,7 +125,7 @@ if(isMobile){
               <div className='flex flex-col w-5/6 md:w-5/6 lg:w-1/4 m-2 md:m-8 lg:m-8 xl:m-8'>
                 <h2 className='text-3xl font-semibold'><Link to={`/${view}`}>{title}</Link></h2>
                 <p>{copy}</p>
-                {btnTitle!=='' ? ( <Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 self-center w-4/5 py-2 px-4 my-8 rounded-full 
+                {btnTitle!=='' ? ( <Link to={`/${view}`} className='bg-gray-800 hover:bg-gray-700 self-center w-4/5 md:w-2/3 py-2 px-4 my-8 rounded-full 
                   text-center text-base tracking-wide text-white font-bold uppercase'>
                   {btnTitle}
                 </Link>) : ''}
