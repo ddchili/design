@@ -250,21 +250,9 @@ export default function CreateEventView(props){
   // const  match = useRouteMatch()
   let { path, url } = useRouteMatch();
 
-  // let { topicId } = useParams()
-
-  const overviewLink = (<div><Link to={`/athlinks`}><h1>Overview</h1></Link></div>)
-  // console.log('path: ', path)
-  // console.log('url: ', url)
-
-  // console.log('topocId: ' , topicId)
 
   return (
     <div className='text-lg'>
-      {/* <Hero
-        copy='Athlinks is owned by Life Time Fitness along with Chronotrack providing 
-        race registration, timing and scoring, and race results for endurance athletic events 
-        including the New York Marathon and Spartan events.'/> */}
-        {overviewLink}
       <Synopsis
         title='Create Event'
         target='Athletic Endurance Events'

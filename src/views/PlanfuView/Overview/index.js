@@ -45,17 +45,6 @@ function Overview(props){
   and which ones did not. We also learned that the best channels are more authentic, not always just an ad on 
   your Facebook feed. `
 
-  // const  match = useRouteMatch()
-  let { path, url } = useRouteMatch()
-
-  let { topicId } = useParams()
-
-  console.log('topocId: ' , topicId)
-
-  const productLink = (<div><Link to={`${path}/product`}><h1>Product</h1></Link></div>)
-  const arpLink = (<div><Link to={`${url}/arp`}><h1>Athlete Race Page</h1></Link></div>)
-  const feesdsLink = (<div><Link to={`${url}/feeds`}><h1>Activity Feeds</h1></Link></div>)
-  const vrLink = (<div><Link to={`${url}/vr`}><h1>Virtual Races</h1></Link></div>)
 
   return (
     <div className='text-lg'>

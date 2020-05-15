@@ -311,16 +311,8 @@ export default function ClientLanding(props){
     </div>
   )
 
-  let { path, url } = useRouteMatch();
-
-
-  const overviewLink = (<div><Link to={`/planfu`}><h1>Overview</h1></Link></div>)
-  const productLink = (<div><Link to={`/planfu/product`}><h1>Product</h1></Link></div>)
-
   return (
     <div className='text-lg'>
-        {overviewLink}
-        {productLink}
       <Synopsis
         title='Client Landing Pages'
         target='Health, Wellness, & Fitness Professionals'

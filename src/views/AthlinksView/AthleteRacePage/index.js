@@ -223,11 +223,9 @@ export default function AthleteRacePage(props){
   )
   
   let { path, url } = useRouteMatch();
-  const overviewLink = (<div><Link to={`/athlinks`}><h1>Overview</h1></Link></div>)
 
   return (
     <div className='text-lg'>
-        {overviewLink}
       <Synopsis
         title='Athlete Race Page'
         target='Athletes'

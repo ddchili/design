@@ -105,24 +105,8 @@ export default function StaffMembers(props){
   suscipit faucibus. Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit 
   varius ac ut risus. Aliquam erat volutpat. Vivamus elementum vestibulum ligula.`
   
-  // const  match = useRouteMatch()
-  let { path, url } = useRouteMatch();
-
-  // let { topicId } = useParams()
-
-  const overviewLink = (<div><Link to={`/planfu`}><h1>Overview</h1></Link></div>)
-  // console.log('path: ', path)
-  // console.log('url: ', url)
-
-  // console.log('topocId: ' , topicId)
-
   return (
     <div className='text-lg'>
-      {/* <Hero
-        copy='Athlinks is owned by Life Time Fitness along with Chronotrack providing 
-        race registration, timing and scoring, and race results for endurance athletic events 
-        including the New York Marathon and Spartan events.'/> */}
-        {overviewLink}
       <Synopsis
         title='Staff Members'
         target='Athletes and Race Directors'

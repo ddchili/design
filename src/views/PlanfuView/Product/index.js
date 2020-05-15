@@ -183,21 +183,9 @@ export default function Product(props){
       <br/>
     </div>
   )
-  
-  // const  match = useRouteMatch()
-  let { path, url } = useRouteMatch();
-
-  // let { topicId } = useParams()
-
-  const overviewLink = (<div><Link to={`/planfu`}><h1>Overview</h1></Link></div>)
-  // console.log('path: ', path)
-  // console.log('url: ', url)
-
-  // console.log('topocId: ' , topicId)
 
   return (
     <div className='text-lg'>
-        {overviewLink}
       <Synopsis
         title='Product Development'
         target='Health, Wellness, & Fitness Professionals'

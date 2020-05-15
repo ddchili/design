@@ -100,7 +100,6 @@ const SectionBorder = () => {
   )
 }
 
-
 export default function ActivityFeeds(props){
 
   const athlinksCopy = `In at libero varius, rutrum leo eu, eleifend purus. Etiam 
@@ -130,11 +129,6 @@ export default function ActivityFeeds(props){
 
   return (
     <div className='text-lg'>
-      {/* <Hero
-        copy='Athlinks is owned by Life Time Fitness along with Chronotrack providing 
-        race registration, timing and scoring, and race results for endurance athletic events 
-        including the New York Marathon and Spartan events.'/> */}
-        {overviewLink}
       <Synopsis
         title='Activity Feeds'
         target='Athletes'

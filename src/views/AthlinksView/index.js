@@ -1,45 +1,38 @@
 import React from 'react'
-import Fade from 'react-reveal/Fade'
+import {
+  BrowserRouter as Router,
+  Link,
+} from 'react-router-dom'
+
 
 import Hero from '../../components/Hero'
-
-import Button from '@material-ui/core/Button'
-import { isMobile } from 'react-device-detect'
-
-import screenCX from '../../static/img/raster/work_athlinks_cx.jpg'
-import bladeOnsite from '../../static/img/raster/work_athlinks_blade_onsite.jpg'
-import bladeDSExpert from '../../static/img/raster/work_athlinks_blade_dsExpert.jpg'
-import bladeCollab from '../../static/img/raster/work_athlinks_blade_dsCollab.jpg'
-import bladeSolSketch from '../../static/img/raster/work_athlinks_blade_solSketch.jpg'
-import bladeVisLang from '../../static/img/raster/work_athlinks_blade_visLang.jpg'
-import thumbBooth from '../../static/img/raster/work_thumb_booth.jpg'
-import thumbStart from '../../static/img/raster/work_thumb_startLine.jpg'
-import thumbTimers from '../../static/img/raster/work_thumb_timers.jpg'
-import thumbSolSketch from '../../static/img/raster/work_athlinks_thumb_solSketch.jpg'
-import thumbEventDashboard from '../../static/img/raster/work_thumb_evnetDashboard.jpg'
-import thumbTestBoard from '../../static/img/raster/work_thumb_usertestBoard.jpg'
 
 import brandAthlinks from '../../static/img/svg/brand_athlinks.svg'
 
 import './styles.scss'
 
 
+const ContextNav = () => {
+  const overViewLink = (<div className='mx-4'><Link to={`/athlinks`}><h1>Overview</h1></Link></div>)
+  const createEventLink = (<div className='mx-4'><Link to={`/athlinks/event`}><h1>Create Event</h1></Link></div>)
+  const arpLink = (<div className='mx-4'><Link to={`/athlinks/arp`}><h1>Athlete Race Page</h1></Link></div>)
+  const feedsLink = (<div className='mx-4'><Link to={`/athlinks/feeds`}><h1>Activity Feeds</h1></Link></div>)
+  const vrLink = (<div className='mx-4'><Link to={`/athlinks/vr`}><h1>Virtual Races</h1></Link></div>)
+
+  const navLinks = [overViewLink, createEventLink, arpLink, feedsLink, vrLink]
+
+  return (
+    <div className='flex flex-col lg:flex-row w-full md:w-2/3 lg:w-2/3 align-center justify-center text-center mx-auto px-4 py-4'>
+      {
+        navLinks.map((link, index) => (
+          navLinks[index]
+        ))
+      }
+    </div>
+  )
+}
 
 export default function AthlinksView(props){
-
-  const athlinksCopy = `In at libero varius, rutrum leo eu, eleifend purus. Etiam 
-  vulputate fringilla neque sit amet gravida. Vestibulum id turpis vestibulum felis 
-  suscipit faucibus. Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit 
-  varius ac ut risus. Aliquam erat volutpat. Vivamus elementum vestibulum ligula.`
-
-  const challenge = `Timers use our hardware to time athletic events, but they may use 
-  different scoring platforms to push results to. How do we ensure Athlinks members 
-  can rely on Athlinks for all of their race results in one place?`
-
-  const background = `In at libero varius, rutrum leo eu, eleifend purus. Etiam 
-  vulputate fringilla neque sit amet gravida. Vestibulum id turpis vestibulum felis 
-  suscipit faucibus. Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit 
-  varius ac ut risus. Aliquam erat volutpat. Vivamus elementum vestibulum ligula.`
 
   return (
     <div className='text-lg'>
@@ -47,7 +40,7 @@ export default function AthlinksView(props){
         copy=''
         brand={brandAthlinks}
         workHero='athlinks'/>
-      
+      <ContextNav/>
     </div>
   )
 }
