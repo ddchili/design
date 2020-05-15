@@ -42,7 +42,7 @@ const Hero = (props) => {
               I'm David Demmer.
             </h1>
             <p className='text-gray-700 text-lg'>
-              I create Human-Cenetred Design experiences specializing in enterprise and consumer design 
+              I create Human-Centered Design experiences specializing in enterprise and consumer design 
               for the health, wellness, and fitness industries.
             </p>
             <br/>
