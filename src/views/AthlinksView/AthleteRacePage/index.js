@@ -239,6 +239,7 @@ export default function AthleteRacePage(props){
           sectionTitle='Defining the Problem'
           red={false}
           img={bladeLeadvilleTent}
+          imgShadow={true}
           title='Customer Expereince Journey Mapping'
           titleColor='athlinks-blue'
           copyLeft={true}
@@ -246,6 +247,7 @@ export default function AthleteRacePage(props){
         <Blade
           red={false}
           img={bladeJerika}
+          imgShadow={true}
           title='Race Day Scenario Emulation'
           titleColor='athlinks-blue'
           copyLeft={false}
@@ -257,6 +259,7 @@ export default function AthleteRacePage(props){
           sectionTitle='Athlete Race Page State Transitions'
           red={false}
           img={bladeARPStates}
+          imgShadow={true}
           title='Changing of the Data'
           titleColor='athlinks-blue'
           copyLeft={true}
@@ -264,6 +267,7 @@ export default function AthleteRacePage(props){
         <Blade
           red={false}
           img={bladeARP_concierge}
+          imgShadow={true}
           title='Registration Concierge'
           titleColor='athlinks-blue'
           copyLeft={false}

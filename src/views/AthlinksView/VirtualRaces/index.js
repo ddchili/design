@@ -130,7 +130,7 @@ export default function VirtualRaces(props){
         role='Director, facilitaor, researcher, usability tester'
         background={background}/>
       <div className='container mx-auto'>
-        <Blade
+        {/* <Blade
           sectionTitle='Defining the Problem'
           red={false}
           img={screenCX}
@@ -180,7 +180,7 @@ export default function VirtualRaces(props){
           title='The experts in the room'
           titleColor='athlinks-blue'
           copyLeft={true}
-          copy={athlinksCopy}/>
+          copy={athlinksCopy}/> */}
       </div>
     </div>
   )

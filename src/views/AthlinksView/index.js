@@ -19,8 +19,6 @@ import thumbSolSketch from '../../static/img/raster/work_athlinks_thumb_solSketc
 import thumbEventDashboard from '../../static/img/raster/work_thumb_evnetDashboard.jpg'
 import thumbTestBoard from '../../static/img/raster/work_thumb_usertestBoard.jpg'
 
-import miamiReel from '../../static/vid/miamiMarathon_2018_uxReel_compressed.mp4'
-
 import brandAthlinks from '../../static/img/svg/brand_athlinks.svg'
 
 import './styles.scss'

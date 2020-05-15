@@ -44,6 +44,8 @@ import thumbReact from '../../static/img/raster/about_thumb_react.jpg'
 import thumbTailwind from '../../static/img/raster/about_thumb_tailwind.jpg'
 import thumbMUI from '../../static/img/raster/about_thumb_mui.jpg'
 
+import miamiReel from '../../static/vid/miamiMarathon_2018_uxReel_compressed.mp4'
+
 
 
 import bladeClientServices from '../../static/img/raster/planfu_clientLanding_services.jpg'
@@ -70,6 +72,22 @@ const SectionTitleBlock = (props) => {
       </div>
       <div className='mt-12'>
         {copy}
+      </div>
+    </div>
+  )
+}
+
+const VideoBlade = (props) => {
+
+  const thumbWire1Caption = `The service offering along with pricing upfront was the most 
+  appealing to our customers and their clients. `
+  return (
+    <div>
+      <SectionTitleBlock
+        sectionTitle='Athlete Interviews'
+        copy={thumbWire1Caption}/>
+      <div className='w-full lg:w-5/6 mx-auto '>
+        <video className='lg:m-8' controls src={miamiReel}/>
       </div>
     </div>
   )
@@ -400,7 +418,7 @@ export default function AboutView(props){
           <CareerHistory
             title='Career History'/>
 
-          <SectionBorder/>
+          {/* <SectionBorder/>
 
 
           <Blade
@@ -413,6 +431,8 @@ export default function AboutView(props){
             copyLeft={true}
             copy={engineeringCopy}/>
           <FieldResearchThumbs/>  
+
+          <VideoBlade/>
 
           <Blade
             sectionTitle='Defining the Problem'
@@ -434,7 +454,7 @@ export default function AboutView(props){
             copy={engineeringCopy}>
           </Blade>
           
-          <DDActivities/>
+          <DDActivities/> */}
           
 
         </div>

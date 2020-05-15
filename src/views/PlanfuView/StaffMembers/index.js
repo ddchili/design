@@ -130,7 +130,7 @@ export default function StaffMembers(props){
         role='Director, facilitaor, researcher, usability tester'
         background={background}/>
       <div className='container mx-auto'>
-        <Blade
+        {/* <Blade
           sectionTitle='Defining the Problem'
           red={false}
           img={screenCX}
@@ -147,7 +147,7 @@ export default function StaffMembers(props){
           copy={athlinksCopy}>
             <CXThumbs title='Hello There This is a title'/>
             <SectionBorder/>
-        </Blade>
+        </Blade> */}
       </div>
     </div>
   )

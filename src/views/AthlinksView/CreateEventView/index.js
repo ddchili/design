@@ -25,6 +25,7 @@ import bladeOnsite from '../../../static/img/raster/work_athlinks_blade_onsite.j
 import bladeDSExpert from '../../../static/img/raster/work_athlinks_blade_dsExpert.jpg'
 import bladeCollab from '../../../static/img/raster/work_athlinks_blade_dsCollab.jpg'
 import bladeSolSketch from '../../../static/img/raster/work_athlinks_blade_solSketch.jpg'
+import bladeFLowStates from '../../../static/img/raster/work_athlinks_blade_flowStates.jpg'
 import bladeSolProtoTest from '../../../static/img/raster/work_athlinks_blade_protoTest.jpg'
 import bladeVotedSolSketch from '../../../static/img/raster/work_athlinks_blade_votedSketch.jpg'
 import bladeVisLang from '../../../static/img/raster/work_athlinks_blade_visLang.jpg'
@@ -134,10 +135,9 @@ export default function CreateEventView(props){
 
   // Synopsis and Background
 
-  const athlinksCopy = `In at libero varius, rutrum leo eu, eleifend purus. Etiam 
-  vulputate fringilla neque sit amet gravida. Vestibulum id turpis vestibulum felis 
-  suscipit faucibus. Donec et sollicitudin velit. Vivamus nec diam non lacus suscipit 
-  varius ac ut risus. Aliquam erat volutpat. Vivamus elementum vestibulum ligula.`
+  const feedbackMapCopy = `After several interviews with customers, the data was categorized into common 
+  themes and mapped out each action step, on-stage and off, a timer of race director encounters while 
+  linking their registration, timing and scoring, to Athlinks as the results platform. `
 
   const partnerSyncCopy = `The evolution of Athlinks Hub became PartnerSync, a directory access 
   application for external registration providers and scoring/timing platforms to integrate 
@@ -269,7 +269,7 @@ export default function CreateEventView(props){
         title='Create Event'
         target='Athletic Endurance Events'
         challenge={challenge}
-        role='UX Director, Facilitator, Researcher, Usability Tester. Designer'
+        role='UX Director, Facilitator, Researcher, Designer, Usability Tester'
         background={background}/>
       <div className='container mx-auto'>
         <Blade
@@ -279,14 +279,16 @@ export default function CreateEventView(props){
           title='Customer Expereince Journey Mapping'
           titleColor='athlinks-blue'
           copyLeft={true}
-          copy={defineTheProbCopy}/>
+          copy={defineTheProbCopy}
+          imgShadow={true}/>
         <Blade
           red={false}
           img={bladeOnsite}
           title='Onsite Research – Building Empathy'
           titleColor='athlinks-blue'
           copyLeft={false}
-          copy={onsiteEmpathy}>
+          copy={onsiteEmpathy}
+          imgShadow={true}>
             <CXThumbs title='Hello There This is a title'/>
             <SectionBorder/>
         </Blade>
@@ -297,21 +299,24 @@ export default function CreateEventView(props){
           title='The experts in the room'
           titleColor='athlinks-blue'
           copyLeft={true}
-          copy={designSprints}/>
+          copy={designSprints}
+          imgShadow={true}/>
         <Blade
           red={false}
           img={bladeCollab}
           title='Define The Challenge'
           titleColor='athlinks-blue'
           copyLeft={false}
-          copy={dayOne}/>
+          copy={dayOne}
+          imgShadow={true}/>
         <Blade
           red={false}
           img={bladeVotedSolSketch}
           title='Decisions and Alignment'
           titleColor='athlinks-blue'
           copyLeft={true}
-          copy={dayTwo}>
+          copy={dayTwo}
+          imgShadow={true}>
         </Blade>
         
         <Blade
@@ -320,19 +325,10 @@ export default function CreateEventView(props){
           title='Customer Focused Validation'
           titleColor='athlinks-blue'
           copyLeft={false}
-          copy={dayThreeFour}>
+          copy={dayThreeFour}
+          imgShadow={true}>
             <DS1Thumbs/>
-            <SectionBorder/>
           </Blade>
-
-        <Blade
-          sectionTitle='Visual Language'
-          red={false}
-          img={bladeVisLang}
-          title='The experts in the roomd'
-          titleColor='athlinks-blue'
-          copyLeft={true}
-          copy={athlinksCopy}/>
 
         <SectionBorder/>
         
@@ -360,6 +356,18 @@ export default function CreateEventView(props){
           titleColor='athlinks-blue'
           copyLeft={true}
           copy={dashboardCopy}/>
+
+        <SectionBorder/>
+
+        <Blade
+          sectionTitle='Feedback Mapping & UI States'
+          red={false}
+          img={bladeFLowStates}
+          title='Using CX journey mapping methods'
+          titleColor='athlinks-blue'
+          copyLeft={true}
+          copy={feedbackMapCopy}
+          imgShadow={true}/>
       </div>
     </div>
   )

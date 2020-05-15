@@ -92,28 +92,32 @@ function Overview(props){
           titleColor='athlinks-blue'
           copyLeft={false}
           copy={createEventCopy}
-          view='event'/>
+          view='event'
+          imgShadow={true}/>
         <OverviewBlade
           img={overviewARP}
           title='Athlete Race Pages'
           titleColor='athlinks-blue'
           copyLeft={false}
           copy={ARPCopy}
-          view='arp'/>
+          view='arp'
+          imgShadow={true}/>
         <OverviewBlade
           img={overviewFeeds}
           title='Activity Feeds'
           titleColor='athlinks-blue'
           copyLeft={false}
           copy={feedsCopy}
-          view='feeds'/>
+          view='feeds'
+          imgShadow={true}/>
         <OverviewBlade
           img={overviewVirRace}
           title='Virtual Races'
           titleColor='athlinks-blue'
           copyLeft={false}
           copy={vrCopy}
-          view='vr'/>
+          view='vr'
+          imgShadow={true}/>
       </div>
     </div>
   )
