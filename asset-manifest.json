@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/design/static/css/main.d6fb29ee.chunk.css",
+    "main.css": "/design/static/css/main.8bcb5d84.chunk.css",
     "main.js": "/design/static/js/main.cc20c289.chunk.js",
     "main.js.map": "/design/static/js/main.cc20c289.chunk.js.map",
     "runtime-main.js": "/design/static/js/runtime-main.0d9b6d83.js",
@@ -8,9 +8,9 @@
     "static/js/2.d9280a4c.chunk.js": "/design/static/js/2.d9280a4c.chunk.js",
     "static/js/2.d9280a4c.chunk.js.map": "/design/static/js/2.d9280a4c.chunk.js.map",
     "index.html": "/design/index.html",
-    "precache-manifest.7fdd861ee242b9cf7072884d7276b413.js": "/design/precache-manifest.7fdd861ee242b9cf7072884d7276b413.js",
+    "precache-manifest.1df65d4bd2344ffed205f305d9ed0e84.js": "/design/precache-manifest.1df65d4bd2344ffed205f305d9ed0e84.js",
     "service-worker.js": "/design/service-worker.js",
-    "static/css/main.d6fb29ee.chunk.css.map": "/design/static/css/main.d6fb29ee.chunk.css.map",
+    "static/css/main.8bcb5d84.chunk.css.map": "/design/static/css/main.8bcb5d84.chunk.css.map",
     "static/js/2.d9280a4c.chunk.js.LICENSE.txt": "/design/static/js/2.d9280a4c.chunk.js.LICENSE.txt",
     "static/media/about_athlinks_uxTeam.jpg": "/design/static/media/about_athlinks_uxTeam.58c73340.jpg",
     "static/media/about_blade_engineer.jpg": "/design/static/media/about_blade_engineer.32d5e1bb.jpg",
@@ -130,7 +130,7 @@
   "entrypoints": [
     "static/js/runtime-main.0d9b6d83.js",
     "static/js/2.d9280a4c.chunk.js",
-    "static/css/main.d6fb29ee.chunk.css",
+    "static/css/main.8bcb5d84.chunk.css",
     "static/js/main.cc20c289.chunk.js"
   ]
 }
