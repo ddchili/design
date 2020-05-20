@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
   colorPrimary: {
     backgroundColor: '#F7F2F2',
     color: '#454545',
+    boxShadow: 'none'
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -31,20 +32,42 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 3,
     textAlign: 'right',
     '& button' :{
+      margin: 8,
       fontFamily: 'sofia-pro',
-    }
+      '&:hover, &$focusVisible': {
+        backgroundColor: '#F7F2F2',
+        color:'#C06468',
+        borderStyle: 'solid transparent',
+        // borderWidth: 1,
+        // borderColor: '#C06468'
+      },
+    },
+  },
+  toolbar: {
+    minHeight: 128,
   }
-}));
+}))
+
+const btnStyles = makeStyles((theme) => ({
+  root: {
+    
+  },
+  '&:hover, &$focusVisible': {
+    backgroundColor: '#000000',
+  },
+}))
+
 
 const Nav = (props) => {
 
   const classes = useStyles()
+  const btnClasses = btnStyles()
   const theme = useTheme()
   const matches = useMediaQuery(theme.breakpoints.up('sm'))
   const { width } = props
   return(
     <AppBar position='static' className={classes.colorPrimary}>
-      <Toolbar>
+      <Toolbar className={classes.toolbar}>
         <Link to={ '/' }>
           <Brand/>
         </Link>
