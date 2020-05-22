@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e20a59a1c1447563c67570b385b61a45",
+    "revision": "39a0dba9d9a5bdda9efdd49dd122cbe8",
     "url": "/design/index.html"
   },
   {
-    "revision": "1ba5eaac60bffaf42350",
+    "revision": "2a47ad767df1ecc098f5",
     "url": "/design/static/css/main.8bcb5d84.chunk.css"
   },
   {
-    "revision": "aad96f7bc5f553759863",
-    "url": "/design/static/js/2.d9280a4c.chunk.js"
+    "revision": "9b58de8daa31435c65c5",
+    "url": "/design/static/js/2.c4b2ff97.chunk.js"
   },
   {
     "revision": "8dea9a823bfb24207fef47cb32cf30ad",
-    "url": "/design/static/js/2.d9280a4c.chunk.js.LICENSE.txt"
+    "url": "/design/static/js/2.c4b2ff97.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1ba5eaac60bffaf42350",
-    "url": "/design/static/js/main.a56d2163.chunk.js"
+    "revision": "2a47ad767df1ecc098f5",
+    "url": "/design/static/js/main.ce043f59.chunk.js"
   },
   {
     "revision": "c816f079b869400abc0f",
@@ -62,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5c154a653f3de3c2767e047013b644d8",
     "url": "/design/static/media/about_miami_finishSelfie.5c154a65.jpg"
+  },
+  {
+    "revision": "a01c9a233e43b69e32f3c6133a712325",
+    "url": "/design/static/media/about_profilePhoto.a01c9a23.png"
   },
   {
     "revision": "e4a1f710d016d83126ccfe0159c79dde",
