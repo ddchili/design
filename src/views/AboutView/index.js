@@ -19,6 +19,8 @@ import Fade from 'react-reveal/Fade'
 import Button from '@material-ui/core/Button'
 import { isMobile } from 'react-device-detect'
 
+import profilePhoto from '../../static/img/raster/about_profilePhoto.png'
+
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import PictureAsPdfOutlinedIcon from '@material-ui/icons/PictureAsPdfOutlined'
 import DescriptionOutlinedIcon from '@material-ui/icons/DescriptionOutlined'
@@ -208,7 +210,7 @@ const ContactDetails = (props) => {
   const social = props.social ?? '' 
   return(
     <div className='w-full md:9/12 lg:w-9/12 align-center text-center mx-auto px-4 my-8'>
-      <h2 className='text-4xl md:text-6xl lg:text-6xl font-semibold my-16 md:my-32 lg:my-32'>{props.title}</h2>
+      <h2 className='text-4xl md:text-6xl lg:text-6xl font-semibold my-16 md:my-32 lg:my-8'>{props.title}</h2>
       {/**Table */}
       <div className='w-full text-left mx-auto'>
         <div className='flex flex-row my-4 border-b pb-4 border-gray-400'>
@@ -364,18 +366,27 @@ export default function AboutView(props){
       <a href='mailto:david@demmer.design' target='_blank'>david@demmer.design</a>
     )
   }
+
+  const ProfilePhoto = (props) => {
+    return (
+      <div className='flex flex-col items-center w-full mt-24 p-10'>
+        <div className='border p-4 rounded-full w-64 h-auto avatar'>
+          <div className=''>
+            <img src={profilePhoto}/>
+          </div>
+        </div>
+      </div>
+    )
+  }
   
-
-
   return (
     <div>
       <Hero
         copy=''
-        workHero='about'
-        brand={brandDemmer}/>
+        workHero='about'/>
       <div className='text-lg'>
-        
         <div className='container mx-auto'>
+          <ProfilePhoto/>
           <ContactDetails
             title='About Me'
             email={<EmailLink/>}

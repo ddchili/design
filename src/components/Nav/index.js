@@ -10,6 +10,7 @@ import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 import { Link } from 'react-router-dom'
+import { isMobile } from 'react-device-detect'
 
 import Brand from '../Brand'
 
@@ -65,8 +66,9 @@ const Nav = (props) => {
   const theme = useTheme()
   const matches = useMediaQuery(theme.breakpoints.up('sm'))
   const { width } = props
+  const position = isMobile ? 'static' : 'fixed'
   return(
-    <AppBar position='static' className={classes.colorPrimary}>
+    <AppBar position={position} className={classes.colorPrimary}>
       <Toolbar className={classes.toolbar}>
         <Link to={ '/' }>
           <Brand/>

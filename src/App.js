@@ -53,10 +53,9 @@ const useStyles = makeStyles((theme) => ({
 
 function App(props) {
   const classes = useStyles()
-  // let { path, url } = useRouteMatch()
+  let { path, url } = useRouteMatch()
   return (
     <div className='App'>
-      
       <Router>
         <ScrollToTop>
             <Nav/>
