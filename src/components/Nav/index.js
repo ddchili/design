@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   colorPrimary: {
-    backgroundColor: '#F7F2F2',
+    backgroundColor: '#F8F5F5',
     color: '#454545',
     boxShadow: 'none'
   },
@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
       margin: 8,
       fontFamily: 'sofia-pro',
       '&:hover, &$focusVisible': {
-        backgroundColor: '#F7F2F2',
+        backgroundColor: '#F8F5F5',
         color:'#C06468',
         borderStyle: 'solid transparent',
         // borderWidth: 1,
@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   toolbar: {
-    minHeight: 128,
+    minHeight: 94,
   }
 }))
 

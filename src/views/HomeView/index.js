@@ -35,10 +35,10 @@ const Hero = (props) => {
           </div>
           <div className='w-full lg:w-1/2 m-2 lg:ml-12'>
             <h1 style={{fontWeight: 900 }}
-                className='z-10 relative text-6xl font-bold demmer-red absolute'>
+                className='relative text-6xl font-bold demmer-red absolute'>
               Hi!
             </h1>
-            <h1 className='z-10 relative text-3xl font-semibold absolute'>
+            <h1 className='relative text-3xl font-semibold absolute'>
               I'm David Demmer.
             </h1>
             <p className='text-gray-700 text-lg'>
@@ -186,7 +186,7 @@ export default function HomeView(props){
         route='/planfu'
         view='planfu'
         copyLeft={false}
-        copy={athlinksCopy}/>
+        copy={planfuCopy}/>
       <Blade
         red={true}
         img={screenReadyTalk}
