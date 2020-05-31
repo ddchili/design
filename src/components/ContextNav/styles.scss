@@ -7,7 +7,7 @@
 .sticky-wrapper {
   position: relative;
   z-index: 1200;
-  height: 3rem; /* We need to change this value */
+  height: 4rem; 
 }
 
 .sticky .sticky-inner {
@@ -18,4 +18,16 @@
   z-index: 1;
   width: 100vw;
   background-color: #FAFAFA;
+}
+
+@media (max-width: 768px) {
+
+  .sticky-wrapper {
+    height: 6rem;
+  }
+
+  
+  .sticky .sticky-inner {
+    top: 0px;
+  }
 }
