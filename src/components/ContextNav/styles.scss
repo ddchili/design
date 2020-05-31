@@ -1,0 +1,21 @@
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100; /* this is optional and should be different for every project */
+}
+
+.sticky-wrapper {
+  position: relative;
+  z-index: 1200;
+  height: 3rem; /* We need to change this value */
+}
+
+.sticky .sticky-inner {
+  position: fixed;
+  top: 94px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 100vw;
+  background-color: #FAFAFA;
+}
